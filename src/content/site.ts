@@ -259,6 +259,8 @@ export const advisory = {
     href: "mailto:invest@beyondimpact.vc",
   },
 };
+
+export const portfolio = {
   hero: {
     eyebrow: "Portfolio",
     title: "A working directory of the transition economy.",
