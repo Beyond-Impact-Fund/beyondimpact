@@ -14,6 +14,12 @@ import sectorMaterials from "@/assets/sector-materials.jpg";
 import sectorNutrition from "@/assets/sector-nutrition.jpg";
 import sectorPharma from "@/assets/sector-pharma.jpg";
 import sectorIngredients from "@/assets/sector-ingredients.jpg";
+import teamClaire from "@/assets/team/claire.png";
+import teamTarja from "@/assets/team/tarja.png";
+import teamSagar from "@/assets/team/sagar.png";
+import teamAnthony from "@/assets/team/anthony.png";
+import teamHanna from "@/assets/team/hanna.png";
+import teamJody from "@/assets/team/jody.png";
 
 export const site = {
   brand: "Beyond Impact",
@@ -23,6 +29,7 @@ export const site = {
   navLinks: [
     { label: "About", href: "/about" },
     { label: "Funds", href: "/funds" },
+    { label: "Advisory", href: "/advisory" },
     { label: "Portfolio", href: "/portfolio" },
     { label: "Insights", href: "/insights" },
   ],
@@ -94,16 +101,49 @@ export const about = {
       body: "Regenerative inputs — micro-algae, fungi, pulses, fibres — feeding circular ingredient systems with structural margin advantages.",
     },
   ],
-  leadership: [
-    { name: "Claire Smith", role: "Founder & CIO", bio: "30+ years across institutional investing, venture capital and impact. Founder of Beyond Impact.", initials: "CS" },
-    { name: "Partner Two", role: "Managing Partner", bio: "Deep operator experience in food-tech and bio-economy scale-ups across Europe and North America.", initials: "P2" },
-    { name: "Partner Three", role: "Partner, Life Sciences", bio: "Background in cruelty-free pharma, organ-chip platforms and clinical translation.", initials: "P3" },
-  ],
-  investmentTeam: [
-    { name: "Advisor One", role: "Venture Partner — APAC", bio: "Strategic dealflow across Asia-Pacific bio-economy ventures." },
-    { name: "Advisor Two", role: "Venture Partner — MENA", bio: "Sovereign and corporate LP relationships across MENA region." },
-    { name: "Analyst One", role: "Investment Analyst", bio: "Diligence lead on advanced nutrition and ingredients pipeline." },
-    { name: "Analyst Two", role: "Investment Analyst", bio: "Materials and circular-economy thesis research." },
+  team: [
+    {
+      name: "Claire Smith",
+      role: "Founder & CIO",
+      flags: "🇨🇭 🇮🇹 🇬🇧",
+      photo: teamClaire,
+      bio: "Founder of Beyond Investing and Beyond Animal platform. 35+ years of financial management experience. Head of Equity Quantitative Strategies at Albourne Partners Limited, Head of Investor Derivative Marketing at UBS, and Head of Convertible Sales at Swiss Bank Corporation. Among the earliest investors in Geltor, EVERY, Mosa Meat, Supermeat and BlueNalu.",
+    },
+    {
+      name: "Tarja Zudeberg",
+      role: "Partner",
+      flags: "🇫🇮 🇸🇪",
+      photo: teamTarja,
+      bio: "20+ years of experience in venture capital, impact investing, and SME financing. An active angel investor, investing in early-stage Nordic startups focused on sustainable goals. Previously 13 years as CEO and Fund Manager at Almi Invest, executing over 100 transactions across 60+ portfolio companies and holding 30 board seats.",
+    },
+    {
+      name: "Sagar Tandon",
+      role: "Partner",
+      flags: "🇮🇳 🇫🇮 🇳🇱",
+      photo: teamSagar,
+      bio: "Involved in setting up 2 funds — Gray Matters Capital (family office managing over $200 million in AUM), edLABS & Australian Govt. DFAT-backed impact fund. Led investments in over 20 early-stage companies. Mentor at Good Food Institute India & APAC, FI Food APAC and Fashion for Good, Netherlands. Advisor at 2X Global Forum and 2X Ignite.",
+    },
+    {
+      name: "Anthony Stam",
+      role: "Partner",
+      flags: "🇨🇭 🇳🇱",
+      photo: teamAnthony,
+      bio: "20+ years of experience in Private Equity, M&A and Corporate Finance in Europe and North America. Extensive experience in investments across the capital structure (equity, structured equity, mezzanine and debt).",
+    },
+    {
+      name: "Hanna Y. Gabay",
+      role: "Partner",
+      flags: "🇮🇱 🇫🇷",
+      photo: teamHanna,
+      bio: "20+ years of Operational experience, Program Management and Scale-up. Served on several not-for-profit boards, currently chairwoman at Freedom 4 Animals and Director of Global Campaigns for Plant-Based Treaty and the Animal Save Movement. Portfolio Board Representation: Les Nouveaux Affineurs (Observer).",
+    },
+    {
+      name: "Jody Rasch",
+      role: "Partner",
+      flags: "🇺🇸",
+      photo: teamJody,
+      bio: "Pioneer alternative protein investor. Former Trustee — VegInvest, Board of VegFund, Woodstock Farm Sanctuary, Advisor to Crowdbureau. VegInvest was an early investor in Wild Earth, Clara Foods, Geltor, BlueNalu, Veggie Grill, NutPods, Just Inc. and others. Portfolio Board Representation: Renewal Mill (Board Member).",
+    },
   ],
 };
 
@@ -143,6 +183,80 @@ export const funds = {
   philosophy: {
     title: "Scaling the impact, not the hype.",
     body: "Disciplined selection over market hype. Our specialist B2B filters protected the platform from high-profile capital traps — backing companies that started in high-margin niches and earned their way to scale.",
+  },
+};
+
+export const advisory = {
+  hero: {
+    eyebrow: "Advisory Services",
+    title: "Impact Investing — as a Service.",
+    sub: "We help CSRs, philanthropists, INGOs and corporates design, structure and launch impact vehicles aligned with the transition towards a kinder, cleaner, healthier world.",
+    image: heroLab,
+  },
+  thesis: {
+    title: "Leveraging finance for good.",
+    body: "Impact investors alone cannot scale the transition economy. CSRs, foundations, INGOs and corporates control vast pools of capital with mandates aligned to systems change — but lack the specialist origination, diligence and portfolio construction muscle of a dedicated VC. Beyond Impact bridges that gap as a tailor-made advisor and operator.",
+    benefits: [
+      "Additional impact created by impact investments",
+      "Create sustainability and liquidity for legacy programmes",
+      "Access to market insights and disruptive models — footholds in new markets",
+      "Access to talent across the transition economy",
+      "New distribution channels for products and services",
+    ],
+  },
+  audiences: [
+    {
+      tag: "CSRs",
+      name: "Corporate Social Responsibility",
+      body: "Beyond Impact manages CSR capital with no return expectations but 100%+ recycling — turning grant budgets into perpetual impact engines.",
+      flow: "Invest + reinvest",
+    },
+    {
+      tag: "Corporates",
+      name: "Corporations",
+      body: "We deploy corporate impact capital with return expectations — Venture Capital-as-a-Service for strategic investors seeking financial and impact returns.",
+      flow: "Market returns",
+    },
+    {
+      tag: "INGOs",
+      name: "International NGOs",
+      body: "Like Corporations, INGOs invest in impact ventures to bring sustainability and reduce external dependencies — generating below-market returns that fund mission.",
+      flow: "Below-market returns",
+    },
+    {
+      tag: "Philanthropists",
+      name: "Philanthropists & Foundations",
+      body: "Bespoke vehicles for HNW individuals and family foundations seeking deep specialist impact in animal-free, climate-aligned innovation.",
+      flow: "Mission-aligned",
+    },
+  ],
+  services: [
+    {
+      step: "01",
+      title: "Investability & market scoping",
+      body: "Assessing the investability and bankability of the vehicle and conducting market scoping across the transition economy.",
+    },
+    {
+      step: "02",
+      title: "Vehicle structuring",
+      body: "Developing the vehicle structure — portfolio construction, investment thesis, fund structure, investment instruments, and fund economics.",
+    },
+    {
+      step: "03",
+      title: "Process & governance design",
+      body: "Designing key processes at fund and portfolio level, plus providing human-capital services for team build-out and governance.",
+    },
+    {
+      step: "04",
+      title: "Launch & management",
+      body: "Launching and managing the fund — sourcing, selection, deal closures, portfolio management and LP reporting.",
+    },
+  ],
+  cta: {
+    title: "Build a vehicle with us.",
+    body: "If your organisation is exploring impact capital deployment in the transition economy, we'd welcome a conversation.",
+    label: "Email invest@beyondimpact.vc",
+    href: "mailto:invest@beyondimpact.vc",
   },
 };
 
