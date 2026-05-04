@@ -43,7 +43,13 @@ export const home = {
     eyebrow: "The Transition Economy",
     title: "The animal supply chain is not at risk — it is actively breaking.",
     body: "Avian flu has destroyed >100M U.S. layer hens. Marine ingredients in aquafeed dropped from 25% to 3%. Western per-capita meat is in structural decline. We back the companies replacing what's failing — with humane, decarbonizing, regenerative innovation.",
-    image: heroEarth,
+    image: transitionRupture,
+    stats: [
+      { value: ">168M", label: "U.S. birds culled by H5N1 since Feb 2022" },
+      { value: "25% → 3%", label: "Marine ingredients in aquafeed (2000–2023)" },
+      { value: "+275%", label: "U.S. egg price surge post 18% flock depopulation" },
+      { value: "−6%", label: "EU & U.S. peak dairy herd decline YoY" },
+    ],
   },
   stats: [
     { value: "$175M", label: "AUM across two impact VC funds" },
