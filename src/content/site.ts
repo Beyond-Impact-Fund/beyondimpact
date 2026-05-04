@@ -145,6 +145,38 @@ export const about = {
       bio: "Pioneer alternative protein investor. Former Trustee — VegInvest, Board of VegFund, Woodstock Farm Sanctuary, Advisor to Crowdbureau. VegInvest was an early investor in Wild Earth, Clara Foods, Geltor, BlueNalu, Veggie Grill, NutPods, Just Inc. and others. Portfolio Board Representation: Renewal Mill (Board Member).",
     },
   ],
+  awards: [
+    {
+      year: "2024",
+      issuer: "Wealth & Finance — Ethical Finance Awards",
+      title: "Best Impact-Focused Fund Management Firm",
+    },
+    {
+      year: "2023",
+      issuer: "Wealth & Finance — Ethical Finance Awards",
+      title: "Best Investment Company",
+    },
+    {
+      year: "2026",
+      issuer: "ImpactAssets IA 50",
+      title: "Emerging Impact Manager — 15 Years of IA 50",
+    },
+    {
+      year: "2023",
+      issuer: "Environmental Finance — Sustainable Investment Awards",
+      title: "Environmental Fund of the Year — Global",
+    },
+    {
+      year: "—",
+      issuer: "ESG AAA Rating",
+      title: "Best ESG Fund — Climate Focused",
+    },
+    {
+      year: "—",
+      issuer: "ESG AAA Rating",
+      title: "Best ESG Fund",
+    },
+  ],
 };
 
 export const funds = {
