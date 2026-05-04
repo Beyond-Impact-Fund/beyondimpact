@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { site } from "@/content/site";
-import logoWhite from "@/assets/beyond-logo-vertical-white.jpg";
+
 import { ArrowUpRight } from "lucide-react";
 
 const Footer = () => {
@@ -9,8 +9,16 @@ const Footer = () => {
       <div className="container-x py-20">
         <div className="grid gap-12 md:grid-cols-12">
           <div className="md:col-span-5">
-            <Link to="/" className="inline-block">
-              <img src={logoWhite} alt="Beyond Impact" className="h-24 w-auto" />
+            <Link to="/" className="inline-flex items-center gap-3" aria-label="Beyond Impact home">
+              <span aria-hidden className="relative flex h-12 w-12 items-center justify-center">
+                <span className="absolute inset-0 rounded-full border-2 border-green" />
+                <span className="absolute inset-1.5 rounded-full border border-clay" />
+                <span className="script text-coral text-2xl leading-none">♥</span>
+              </span>
+              <span className="flex flex-col">
+                <span className="script text-4xl leading-none text-clay">Beyond</span>
+                <span className="text-[11px] font-medium uppercase tracking-[0.3em] text-green mt-1">Impact</span>
+              </span>
             </Link>
             <p className="mt-6 max-w-md text-clay/70 leading-relaxed">
               {site.tagline}
