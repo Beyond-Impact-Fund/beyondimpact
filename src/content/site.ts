@@ -260,14 +260,18 @@ export const advisory = {
     image: heroLab,
   },
   thesis: {
-    title: "Leveraging finance for good.",
-    body: "Impact investors alone cannot scale the transition economy. CSRs, foundations, INGOs and corporates control vast pools of capital with mandates aligned to systems change — but lack the specialist origination, diligence and portfolio construction muscle of a dedicated VC. Beyond Impact bridges that gap as a tailor-made advisor and operator.",
+    title: "Your capital, our specialist thesis.",
+    body: "We bring nine years of pioneer impact-VC discipline to every mandate — anchored in one thesis: a kinder, cleaner, healthier world. Every vehicle we design is underwritten against the same three pillars we apply to our own funds — Biodiversity, Climate, and Health & Wellbeing — so impact is measured, not implied.",
+    pillars: [
+      { tag: "Biodiversity", body: "Animal lives spared, land liberated, ecosystems restored." },
+      { tag: "Climate", body: "Methane reduction, emission avoidance, Paris-aligned pathways." },
+      { tag: "Health", body: "Chronic disease reduction, zoonotic risk decoupling, public-safety gains." },
+    ],
     benefits: [
-      "Additional impact created by impact investments",
-      "Create sustainability and liquidity for legacy programmes",
-      "Access to market insights and disruptive models — footholds in new markets",
-      "Access to talent across the transition economy",
-      "New distribution channels for products and services",
+      "Additionality — net-new impact created by deployed capital",
+      "Sustainability and liquidity for legacy grant programmes",
+      "Specialist origination across the transition economy",
+      "Access to disruptive talent, models and distribution",
     ],
   },
   audiences: [
