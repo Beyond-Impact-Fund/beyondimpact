@@ -75,6 +75,39 @@ const About = () => {
           </div>
         </div>
       </section>
+
+      {/* AWARDS & RECOGNITION */}
+      <section className="bg-clay py-24 md:py-32">
+        <div className="container-x">
+          <div className="flex items-end justify-between gap-8">
+            <div>
+              <div className="eyebrow text-green">Awards & Recognition</div>
+              <h2 className="display mt-4 max-w-3xl text-4xl text-navy md:text-5xl">
+                Recognised by the <span className="script text-coral">industry</span>.
+              </h2>
+            </div>
+          </div>
+
+          <div className="mt-16 grid gap-px bg-navy/10 md:grid-cols-2 lg:grid-cols-3">
+            {about.awards.map((a, i) => (
+              <motion.div
+                key={`${a.issuer}-${a.title}`}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: (i % 3) * 0.08 }}
+                className="bg-clay p-8"
+              >
+                <div className="flex items-baseline justify-between">
+                  <span className="display text-sm uppercase tracking-wider text-coral">{a.issuer}</span>
+                  <span className="text-xs uppercase tracking-wider text-navy/50">{a.year}</span>
+                </div>
+                <h3 className="display mt-4 text-xl text-navy">{a.title}</h3>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
     </Layout>
   );
 };
