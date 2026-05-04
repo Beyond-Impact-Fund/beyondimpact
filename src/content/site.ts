@@ -186,7 +186,79 @@ export const funds = {
   },
 };
 
-export const portfolio = {
+export const advisory = {
+  hero: {
+    eyebrow: "Advisory Services",
+    title: "Impact Investing — as a Service.",
+    sub: "We help CSRs, philanthropists, INGOs and corporates design, structure and launch impact vehicles aligned with the transition towards a kinder, cleaner, healthier world.",
+    image: heroLab,
+  },
+  thesis: {
+    title: "Leveraging finance for good.",
+    body: "Impact investors alone cannot scale the transition economy. CSRs, foundations, INGOs and corporates control vast pools of capital with mandates aligned to systems change — but lack the specialist origination, diligence and portfolio construction muscle of a dedicated VC. Beyond Impact bridges that gap as a tailor-made advisor and operator.",
+    benefits: [
+      "Additional impact created by impact investments",
+      "Create sustainability and liquidity for legacy programmes",
+      "Access to market insights and disruptive models — footholds in new markets",
+      "Access to talent across the transition economy",
+      "New distribution channels for products and services",
+    ],
+  },
+  audiences: [
+    {
+      tag: "CSRs",
+      name: "Corporate Social Responsibility",
+      body: "Beyond Impact manages CSR capital with no return expectations but 100%+ recycling — turning grant budgets into perpetual impact engines.",
+      flow: "Invest + reinvest",
+    },
+    {
+      tag: "Corporates",
+      name: "Corporations",
+      body: "We deploy corporate impact capital with return expectations — Venture Capital-as-a-Service for strategic investors seeking financial and impact returns.",
+      flow: "Market returns",
+    },
+    {
+      tag: "INGOs",
+      name: "International NGOs",
+      body: "Like Corporations, INGOs invest in impact ventures to bring sustainability and reduce external dependencies — generating below-market returns that fund mission.",
+      flow: "Below-market returns",
+    },
+    {
+      tag: "Philanthropists",
+      name: "Philanthropists & Foundations",
+      body: "Bespoke vehicles for HNW individuals and family foundations seeking deep specialist impact in animal-free, climate-aligned innovation.",
+      flow: "Mission-aligned",
+    },
+  ],
+  services: [
+    {
+      step: "01",
+      title: "Investability & market scoping",
+      body: "Assessing the investability and bankability of the vehicle and conducting market scoping across the transition economy.",
+    },
+    {
+      step: "02",
+      title: "Vehicle structuring",
+      body: "Developing the vehicle structure — portfolio construction, investment thesis, fund structure, investment instruments, and fund economics.",
+    },
+    {
+      step: "03",
+      title: "Process & governance design",
+      body: "Designing key processes at fund and portfolio level, plus providing human-capital services for team build-out and governance.",
+    },
+    {
+      step: "04",
+      title: "Launch & management",
+      body: "Launching and managing the fund — sourcing, selection, deal closures, portfolio management and LP reporting.",
+    },
+  ],
+  cta: {
+    title: "Build a vehicle with us.",
+    body: "If your organisation is exploring impact capital deployment in the transition economy, we'd welcome a conversation.",
+    label: "Email invest@beyondimpact.vc",
+    href: "mailto:invest@beyondimpact.vc",
+  },
+};
   hero: {
     eyebrow: "Portfolio",
     title: "A working directory of the transition economy.",
