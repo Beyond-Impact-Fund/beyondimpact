@@ -9,6 +9,7 @@ import heroFields from "@/assets/hero-fields.jpg";
 import heroBio from "@/assets/hero-bio.jpg";
 import heroLab from "@/assets/hero-lab.jpg";
 import heroEarth from "@/assets/hero-earth.jpg";
+import transitionRupture from "@/assets/transition-rupture.jpg";
 import sectorMaterials from "@/assets/sector-materials.jpg";
 import sectorNutrition from "@/assets/sector-nutrition.jpg";
 import sectorPharma from "@/assets/sector-pharma.jpg";
