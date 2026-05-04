@@ -101,16 +101,49 @@ export const about = {
       body: "Regenerative inputs — micro-algae, fungi, pulses, fibres — feeding circular ingredient systems with structural margin advantages.",
     },
   ],
-  leadership: [
-    { name: "Claire Smith", role: "Founder & CIO", bio: "30+ years across institutional investing, venture capital and impact. Founder of Beyond Impact.", initials: "CS" },
-    { name: "Partner Two", role: "Managing Partner", bio: "Deep operator experience in food-tech and bio-economy scale-ups across Europe and North America.", initials: "P2" },
-    { name: "Partner Three", role: "Partner, Life Sciences", bio: "Background in cruelty-free pharma, organ-chip platforms and clinical translation.", initials: "P3" },
-  ],
-  investmentTeam: [
-    { name: "Advisor One", role: "Venture Partner — APAC", bio: "Strategic dealflow across Asia-Pacific bio-economy ventures." },
-    { name: "Advisor Two", role: "Venture Partner — MENA", bio: "Sovereign and corporate LP relationships across MENA region." },
-    { name: "Analyst One", role: "Investment Analyst", bio: "Diligence lead on advanced nutrition and ingredients pipeline." },
-    { name: "Analyst Two", role: "Investment Analyst", bio: "Materials and circular-economy thesis research." },
+  team: [
+    {
+      name: "Claire Smith",
+      role: "Founder & CIO",
+      flags: "🇨🇭 🇮🇹 🇬🇧",
+      photo: teamClaire,
+      bio: "Founder of Beyond Investing and Beyond Animal platform. 35+ years of financial management experience. Head of Equity Quantitative Strategies at Albourne Partners Limited, Head of Investor Derivative Marketing at UBS, and Head of Convertible Sales at Swiss Bank Corporation. Among the earliest investors in Geltor, EVERY, Mosa Meat, Supermeat and BlueNalu.",
+    },
+    {
+      name: "Tarja Zudeberg",
+      role: "Partner",
+      flags: "🇫🇮 🇸🇪",
+      photo: teamTarja,
+      bio: "20+ years of experience in venture capital, impact investing, and SME financing. An active angel investor, investing in early-stage Nordic startups focused on sustainable goals. Previously 13 years as CEO and Fund Manager at Almi Invest, executing over 100 transactions across 60+ portfolio companies and holding 30 board seats.",
+    },
+    {
+      name: "Sagar Tandon",
+      role: "Partner",
+      flags: "🇮🇳 🇫🇮 🇳🇱",
+      photo: teamSagar,
+      bio: "Involved in setting up 2 funds — Gray Matters Capital (family office managing over $200 million in AUM), edLABS & Australian Govt. DFAT-backed impact fund. Led investments in over 20 early-stage companies. Mentor at Good Food Institute India & APAC, FI Food APAC and Fashion for Good, Netherlands. Advisor at 2X Global Forum and 2X Ignite.",
+    },
+    {
+      name: "Anthony Stam",
+      role: "Partner",
+      flags: "🇨🇭 🇳🇱",
+      photo: teamAnthony,
+      bio: "20+ years of experience in Private Equity, M&A and Corporate Finance in Europe and North America. Extensive experience in investments across the capital structure (equity, structured equity, mezzanine and debt).",
+    },
+    {
+      name: "Hanna Y. Gabay",
+      role: "Partner",
+      flags: "🇮🇱 🇫🇷",
+      photo: teamHanna,
+      bio: "20+ years of Operational experience, Program Management and Scale-up. Served on several not-for-profit boards, currently chairwoman at Freedom 4 Animals and Director of Global Campaigns for Plant-Based Treaty and the Animal Save Movement. Portfolio Board Representation: Les Nouveaux Affineurs (Observer).",
+    },
+    {
+      name: "Jody Rasch",
+      role: "Partner",
+      flags: "🇺🇸",
+      photo: teamJody,
+      bio: "Pioneer alternative protein investor. Former Trustee — VegInvest, Board of VegFund, Woodstock Farm Sanctuary, Advisor to Crowdbureau. VegInvest was an early investor in Wild Earth, Clara Foods, Geltor, BlueNalu, Veggie Grill, NutPods, Just Inc. and others. Portfolio Board Representation: Renewal Mill (Board Member).",
+    },
   ],
 };
 
