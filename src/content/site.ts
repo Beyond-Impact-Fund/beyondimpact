@@ -145,6 +145,40 @@ export const about = {
       bio: "Pioneer alternative protein investor. Former Trustee — VegInvest, Board of VegFund, Woodstock Farm Sanctuary, Advisor to Crowdbureau. VegInvest was an early investor in Wild Earth, Clara Foods, Geltor, BlueNalu, Veggie Grill, NutPods, Just Inc. and others. Portfolio Board Representation: Renewal Mill (Board Member).",
     },
   ],
+  impactPillars: {
+    eyebrow: "Impact Tracking Pillars",
+    title: "Three layers of impact — measured, not implied.",
+    sub: "Every portfolio company is underwritten and tracked against a triple-pillar framework. No green halo, no vanity metrics.",
+    pillars: [
+      {
+        icon: "Sprout",
+        name: "Biodiversity",
+        points: [
+          "Track animal lives spared by replacing livestock products with ethical alternatives.",
+          "Quantify land liberation and rewilding from a reduced industrial-agriculture footprint.",
+          "Measure net-positive ecosystem gains using standardised biodiversity restoration metrics.",
+        ],
+      },
+      {
+        icon: "Globe2",
+        name: "Climate",
+        points: [
+          "Target aggressive methane reduction for immediate cooling effects on the planet.",
+          "Prioritise innovations delivering both emission avoidance and active carbon sequestration.",
+          "Benchmark every portfolio company against global net-zero and Paris-aligned pathways.",
+        ],
+      },
+      {
+        icon: "HeartPulse",
+        name: "Health & Wellbeing",
+        points: [
+          "Combat chronic disease by removing harmful animal-based ingredients from global diets.",
+          "Mitigate zoonotic pandemic risk by decoupling supply chains from factory farming.",
+          "Quantify the societal value of reduced healthcare burdens and improved public safety.",
+        ],
+      },
+    ],
+  },
   awards: [
     {
       year: "2024",
