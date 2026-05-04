@@ -2,6 +2,8 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { site } from "@/content/site";
+import logoColor from "@/assets/beyond-logo-vertical.png";
+import logoOnNavy from "@/assets/beyond-logo-vertical-onnavy.png";
 
 interface NavbarProps {
   variant?: "light" | "dark";
@@ -32,16 +34,14 @@ const Navbar = ({ variant = "light" }: NavbarProps) => {
   return (
     <header className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${bgClass}`}>
       <div className="container-x flex h-20 items-center justify-between">
-        <Link to="/" className="flex items-center gap-3 group" aria-label="Beyond Impact home">
-          <span aria-hidden className="relative flex h-9 w-9 items-center justify-center">
-            <span className={`absolute inset-0 rounded-full border-2 ${isDark ? "border-green/70" : "border-green"}`} />
-            <span className={`absolute inset-1 rounded-full border ${isDark ? "border-clay/80" : "border-navy"}`} />
-            <span className="script text-coral text-lg leading-none">♥</span>
-          </span>
-          <span className={`flex items-baseline gap-1.5 ${textClass}`}>
-            <span className="script text-2xl leading-none">Beyond</span>
-            <span className="text-[10px] font-medium uppercase tracking-[0.25em] text-green">Impact</span>
-          </span>
+        <Link to="/" className="flex items-center" aria-label="Beyond Impact home">
+          <img
+            src={isDark ? logoOnNavy : logoColor}
+            alt="Beyond Impact"
+            width={1754}
+            height={1241}
+            className="h-14 w-auto object-contain"
+          />
         </Link>
 
         <nav className="hidden items-center gap-1 md:flex">
