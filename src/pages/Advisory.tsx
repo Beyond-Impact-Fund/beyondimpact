@@ -20,24 +20,36 @@ const Advisory = () => {
 
       {/* THESIS / WHAT'S IN IT FOR YOU */}
       <section className="bg-clay py-24 md:py-32">
-        <div className="container-x grid gap-16 md:grid-cols-12">
-          <div className="md:col-span-5">
-            <div className="eyebrow text-green">Leveraging finance for good</div>
-            <h2 className="display mt-4 text-4xl text-navy md:text-5xl">{advisory.thesis.title}</h2>
-            <p className="mt-6 leading-relaxed text-navy/75">{advisory.thesis.body}</p>
-          </div>
-          <div className="md:col-span-7">
-            <div className="rounded-2xl bg-navy p-10 text-clay shadow-soft md:p-12">
-              <div className="display text-sm uppercase tracking-wider text-coral">What's in it for you</div>
-              <ul className="mt-6 space-y-4">
-                {advisory.thesis.benefits.map((b) => (
-                  <li key={b} className="flex gap-4 border-b border-clay/10 pb-4 last:border-0">
-                    <span className="display text-coral">→</span>
-                    <span className="leading-relaxed text-clay/85">{b}</span>
-                  </li>
-                ))}
-              </ul>
+        <div className="container-x">
+          <div className="grid gap-16 md:grid-cols-12">
+            <div className="md:col-span-5">
+              <div className="eyebrow text-green">Anchored in our thesis</div>
+              <h2 className="display mt-4 text-4xl text-navy md:text-5xl">{advisory.thesis.title}</h2>
+              <p className="mt-6 leading-relaxed text-navy/75">{advisory.thesis.body}</p>
             </div>
+            <div className="md:col-span-7">
+              <div className="rounded-2xl bg-navy p-10 text-clay shadow-soft md:p-12">
+                <div className="display text-sm uppercase tracking-wider text-coral">What's in it for you</div>
+                <ul className="mt-6 space-y-4">
+                  {advisory.thesis.benefits.map((b) => (
+                    <li key={b} className="flex gap-4 border-b border-clay/10 pb-4 last:border-0">
+                      <span className="display text-coral">→</span>
+                      <span className="leading-relaxed text-clay/85">{b}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* THREE PILLARS STRIP */}
+          <div className="mt-20 grid gap-px overflow-hidden rounded-2xl bg-navy/10 md:grid-cols-3">
+            {advisory.thesis.pillars.map((p) => (
+              <div key={p.tag} className="bg-clay p-8">
+                <div className="display text-sm uppercase tracking-wider text-coral">{p.tag}</div>
+                <p className="mt-3 text-sm leading-relaxed text-navy/75">{p.body}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

@@ -1,7 +1,10 @@
 import { motion } from "framer-motion";
+import { Sprout, Globe2, HeartPulse } from "lucide-react";
 import Layout from "@/components/Layout";
 import PageHero from "@/components/PageHero";
 import { about } from "@/content/site";
+
+const pillarIcons = { Sprout, Globe2, HeartPulse } as const;
 
 const About = () => {
   return (
@@ -35,6 +38,48 @@ const About = () => {
                 <p className="mt-4 leading-relaxed text-navy/70">{v.body}</p>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* IMPACT PILLARS */}
+      <section className="bg-clay-warm py-24 md:py-32">
+        <div className="container-x">
+          <div className="max-w-3xl">
+            <div className="eyebrow text-green">{about.impactPillars.eyebrow}</div>
+            <h2 className="display mt-4 text-4xl text-navy md:text-5xl">
+              {about.impactPillars.title}
+            </h2>
+            <p className="mt-6 leading-relaxed text-navy/70">{about.impactPillars.sub}</p>
+          </div>
+
+          <div className="mt-16 grid gap-6 md:grid-cols-3">
+            {about.impactPillars.pillars.map((p, i) => {
+              const Icon = pillarIcons[p.icon as keyof typeof pillarIcons];
+              return (
+                <motion.div
+                  key={p.name}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: i * 0.1 }}
+                  className="relative rounded-2xl bg-navy p-8 text-clay shadow-soft md:p-10"
+                >
+                  <div className="absolute -top-5 left-8 flex h-10 w-10 items-center justify-center rounded-full bg-green text-navy ring-4 ring-clay-warm">
+                    {Icon && <Icon className="h-5 w-5" strokeWidth={2.25} />}
+                  </div>
+                  <h3 className="display mt-2 text-2xl text-clay">{p.name}</h3>
+                  <ul className="mt-6 space-y-4">
+                    {p.points.map((pt) => (
+                      <li key={pt} className="flex gap-3 text-sm leading-relaxed text-clay/80">
+                        <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-coral" />
+                        <span>{pt}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       </section>

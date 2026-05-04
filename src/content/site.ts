@@ -145,6 +145,40 @@ export const about = {
       bio: "Pioneer alternative protein investor. Former Trustee — VegInvest, Board of VegFund, Woodstock Farm Sanctuary, Advisor to Crowdbureau. VegInvest was an early investor in Wild Earth, Clara Foods, Geltor, BlueNalu, Veggie Grill, NutPods, Just Inc. and others. Portfolio Board Representation: Renewal Mill (Board Member).",
     },
   ],
+  impactPillars: {
+    eyebrow: "Impact Tracking Pillars",
+    title: "Three layers of impact — measured, not implied.",
+    sub: "Every portfolio company is underwritten and tracked against a triple-pillar framework. No green halo, no vanity metrics.",
+    pillars: [
+      {
+        icon: "Sprout",
+        name: "Biodiversity",
+        points: [
+          "Track animal lives spared by replacing livestock products with ethical alternatives.",
+          "Quantify land liberation and rewilding from a reduced industrial-agriculture footprint.",
+          "Measure net-positive ecosystem gains using standardised biodiversity restoration metrics.",
+        ],
+      },
+      {
+        icon: "Globe2",
+        name: "Climate",
+        points: [
+          "Target aggressive methane reduction for immediate cooling effects on the planet.",
+          "Prioritise innovations delivering both emission avoidance and active carbon sequestration.",
+          "Benchmark every portfolio company against global net-zero and Paris-aligned pathways.",
+        ],
+      },
+      {
+        icon: "HeartPulse",
+        name: "Health & Wellbeing",
+        points: [
+          "Combat chronic disease by removing harmful animal-based ingredients from global diets.",
+          "Mitigate zoonotic pandemic risk by decoupling supply chains from factory farming.",
+          "Quantify the societal value of reduced healthcare burdens and improved public safety.",
+        ],
+      },
+    ],
+  },
   awards: [
     {
       year: "2024",
@@ -226,14 +260,18 @@ export const advisory = {
     image: heroLab,
   },
   thesis: {
-    title: "Leveraging finance for good.",
-    body: "Impact investors alone cannot scale the transition economy. CSRs, foundations, INGOs and corporates control vast pools of capital with mandates aligned to systems change — but lack the specialist origination, diligence and portfolio construction muscle of a dedicated VC. Beyond Impact bridges that gap as a tailor-made advisor and operator.",
+    title: "Your capital, our specialist thesis.",
+    body: "We bring nine years of pioneer impact-VC discipline to every mandate — anchored in one thesis: a kinder, cleaner, healthier world. Every vehicle we design is underwritten against the same three pillars we apply to our own funds — Biodiversity, Climate, and Health & Wellbeing — so impact is measured, not implied.",
+    pillars: [
+      { tag: "Biodiversity", body: "Animal lives spared, land liberated, ecosystems restored." },
+      { tag: "Climate", body: "Methane reduction, emission avoidance, Paris-aligned pathways." },
+      { tag: "Health", body: "Chronic disease reduction, zoonotic risk decoupling, public-safety gains." },
+    ],
     benefits: [
-      "Additional impact created by impact investments",
-      "Create sustainability and liquidity for legacy programmes",
-      "Access to market insights and disruptive models — footholds in new markets",
-      "Access to talent across the transition economy",
-      "New distribution channels for products and services",
+      "Additionality — net-new impact created by deployed capital",
+      "Sustainability and liquidity for legacy grant programmes",
+      "Specialist origination across the transition economy",
+      "Access to disruptive talent, models and distribution",
     ],
   },
   audiences: [
