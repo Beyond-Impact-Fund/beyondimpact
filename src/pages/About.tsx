@@ -43,7 +43,7 @@ const About = () => {
       </section>
 
       {/* IMPACT PILLARS */}
-      <section className="bg-sand py-24 md:py-32">
+      <section className="bg-clay-warm py-24 md:py-32">
         <div className="container-x">
           <div className="max-w-3xl">
             <div className="eyebrow text-green">{about.impactPillars.eyebrow}</div>
@@ -65,7 +65,7 @@ const About = () => {
                   transition={{ duration: 0.6, delay: i * 0.1 }}
                   className="relative rounded-2xl bg-navy p-8 text-clay shadow-soft md:p-10"
                 >
-                  <div className="absolute -top-5 left-8 flex h-10 w-10 items-center justify-center rounded-full bg-green text-navy ring-4 ring-sand">
+                  <div className="absolute -top-5 left-8 flex h-10 w-10 items-center justify-center rounded-full bg-green text-navy ring-4 ring-clay-warm">
                     {Icon && <Icon className="h-5 w-5" strokeWidth={2.25} />}
                   </div>
                   <h3 className="display mt-2 text-2xl text-clay">{p.name}</h3>
