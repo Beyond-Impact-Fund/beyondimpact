@@ -2,8 +2,8 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { site } from "@/content/site";
-import logoColor from "@/assets/beyond-logo-vertical.png";
-import logoOnNavy from "@/assets/beyond-logo-vertical-onnavy.png";
+import logoColor from "@/assets/beyond-logo-vertical-onnavy.png";
+import logoOnNavy from "@/assets/beyond-logo-vertical.png";
 
 interface NavbarProps {
   variant?: "light" | "dark";

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { site } from "@/content/site";
-import logoOnNavy from "@/assets/beyond-logo-vertical-onnavy.png";
+import logoOnNavy from "@/assets/beyond-logo-vertical.png";
 import { ArrowUpRight } from "lucide-react";
 
 const Footer = () => {
