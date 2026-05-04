@@ -1,7 +1,10 @@
 import { motion } from "framer-motion";
+import { Sprout, Globe2, HeartPulse } from "lucide-react";
 import Layout from "@/components/Layout";
 import PageHero from "@/components/PageHero";
 import { about } from "@/content/site";
+
+const pillarIcons = { Sprout, Globe2, HeartPulse } as const;
 
 const About = () => {
   return (
