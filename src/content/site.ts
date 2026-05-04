@@ -14,6 +14,12 @@ import sectorMaterials from "@/assets/sector-materials.jpg";
 import sectorNutrition from "@/assets/sector-nutrition.jpg";
 import sectorPharma from "@/assets/sector-pharma.jpg";
 import sectorIngredients from "@/assets/sector-ingredients.jpg";
+import teamClaire from "@/assets/team/claire.png";
+import teamTarja from "@/assets/team/tarja.png";
+import teamSagar from "@/assets/team/sagar.png";
+import teamAnthony from "@/assets/team/anthony.png";
+import teamHanna from "@/assets/team/hanna.png";
+import teamJody from "@/assets/team/jody.png";
 
 export const site = {
   brand: "Beyond Impact",
