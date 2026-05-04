@@ -18,7 +18,7 @@ const Funds = () => {
         <div className="container-x">
           <div className="eyebrow text-green">The Platform</div>
           <h2 className="display mt-4 max-w-3xl text-4xl text-navy md:text-5xl">
-            Active and closed vehicles, plus public-market exposure.
+            Two products. One disciplined platform.
           </h2>
 
           <div className="mt-16 grid gap-6 md:grid-cols-2">
