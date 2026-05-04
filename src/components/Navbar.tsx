@@ -2,8 +2,8 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { site } from "@/content/site";
-import logoColor from "@/assets/beyond-logo-vertical-onnavy.png";
-import logoOnNavy from "@/assets/beyond-logo-vertical.png";
+import logoColor from "@/assets/beyond-logo-color.png";
+import logoLight from "@/assets/beyond-logo-light.png";
 
 interface NavbarProps {
   variant?: "light" | "dark";
@@ -36,7 +36,7 @@ const Navbar = ({ variant = "light" }: NavbarProps) => {
       <div className="container-x flex h-20 items-center justify-between">
         <Link to="/" className="flex items-center" aria-label="Beyond Impact home">
           <img
-            src={isDark ? logoOnNavy : logoColor}
+            src={isDark ? logoLight : logoColor}
             alt="Beyond Impact"
             width={1754}
             height={1241}

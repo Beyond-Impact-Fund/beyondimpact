@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { site } from "@/content/site";
-import logoOnNavy from "@/assets/beyond-logo-vertical.png";
+import logoLight from "@/assets/beyond-logo-light.png";
 import { ArrowUpRight } from "lucide-react";
 
 const Footer = () => {
@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="md:col-span-5">
             <Link to="/" className="inline-flex items-center" aria-label="Beyond Impact home">
               <img
-                src={logoOnNavy}
+                src={logoLight}
                 alt="Beyond Impact"
                 width={1754}
                 height={1241}
