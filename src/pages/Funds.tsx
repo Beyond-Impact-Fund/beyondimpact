@@ -18,7 +18,7 @@ const Funds = () => {
         <div className="container-x">
           <div className="eyebrow text-green">The Platform</div>
           <h2 className="display mt-4 max-w-3xl text-4xl text-navy md:text-5xl">
-            Active and closed vehicles, plus public-market exposure.
+            Two products. One disciplined platform.
           </h2>
 
           <div className="mt-16 grid gap-6 md:grid-cols-2">
@@ -64,6 +64,29 @@ const Funds = () => {
               </motion.article>
             ))}
           </div>
+
+          {/* SISTER ENTITY */}
+          <motion.a
+            href={funds.sister.cta.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="group mt-10 grid gap-6 bg-navy p-8 text-clay shadow-soft hover:shadow-elevated transition-shadow md:grid-cols-12 md:items-center md:p-12"
+          >
+            <div className="md:col-span-3">
+              <div className="text-[11px] uppercase tracking-wider text-coral">{funds.sister.tag}</div>
+              <div className="display mt-2 text-3xl text-clay md:text-4xl">{funds.sister.name}</div>
+            </div>
+            <p className="text-clay/75 leading-relaxed md:col-span-7">{funds.sister.desc}</p>
+            <div className="md:col-span-2 md:text-right">
+              <span className="inline-flex items-center gap-2 rounded-full border border-clay/30 px-5 py-3 text-sm font-medium text-clay transition-colors group-hover:bg-coral group-hover:border-coral">
+                Visit site →
+              </span>
+            </div>
+          </motion.a>
         </div>
       </section>
 

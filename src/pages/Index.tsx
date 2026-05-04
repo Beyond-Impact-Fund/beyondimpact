@@ -85,31 +85,45 @@ const Index = () => {
 
       {/* MISSION CALLOUT */}
       <section className="bg-clay py-24 md:py-32">
-        <div className="container-x grid gap-16 md:grid-cols-12">
-          <div className="md:col-span-5">
+        <div className="container-x">
+          <div className="max-w-3xl">
             <div className="eyebrow text-green">{home.missionCallout.eyebrow}</div>
-            <div className="relative mt-6 aspect-[4/5] overflow-hidden rounded-sm">
-              <img
-                src={home.missionCallout.image}
-                alt="Planetary view"
-                className="h-full w-full object-cover"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div className="md:col-span-7 md:pl-8">
-            <h2 className="display text-4xl text-navy md:text-6xl">
+            <h2 className="display mt-6 text-4xl text-navy md:text-6xl">
               {home.missionCallout.title}
             </h2>
-            <p className="mt-8 max-w-xl text-lg leading-relaxed text-navy/70">
-              {home.missionCallout.body}
-            </p>
-            <Link
-              to="/about"
-              className="mt-10 inline-flex items-center gap-2 border-b border-navy pb-1 text-sm font-medium text-navy hover:text-coral hover:border-coral transition-colors"
-            >
-              How we invest <ArrowRight className="h-4 w-4" />
-            </Link>
+          </div>
+
+          <div className="mt-12 grid gap-12 md:grid-cols-12 md:gap-16">
+            <div className="md:col-span-7">
+              <div className="relative aspect-[16/10] overflow-hidden rounded-sm">
+                <img
+                  src={home.missionCallout.image}
+                  alt="Rupture and replacement: collapsing legacy supply chains and emerging precision-fermentation infrastructure"
+                  className="h-full w-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div className="md:col-span-5">
+              <p className="text-lg leading-relaxed text-navy/75">
+                {home.missionCallout.body}
+              </p>
+              <Link
+                to="/about"
+                className="mt-8 inline-flex items-center gap-2 border-b border-navy pb-1 text-sm font-medium text-navy hover:text-coral hover:border-coral transition-colors"
+              >
+                How we invest <ArrowRight className="h-4 w-4" />
+              </Link>
+            </div>
+          </div>
+
+          <div className="mt-16 grid gap-px bg-navy/10 sm:grid-cols-2 lg:grid-cols-4 border border-navy/10">
+            {home.missionCallout.stats.map((s) => (
+              <div key={s.label} className="bg-clay p-6">
+                <div className="display text-3xl text-coral md:text-4xl">{s.value}</div>
+                <div className="mt-3 text-xs uppercase tracking-wider text-navy/60 leading-relaxed">{s.label}</div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

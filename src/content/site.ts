@@ -9,6 +9,7 @@ import heroFields from "@/assets/hero-fields.jpg";
 import heroBio from "@/assets/hero-bio.jpg";
 import heroLab from "@/assets/hero-lab.jpg";
 import heroEarth from "@/assets/hero-earth.jpg";
+import transitionRupture from "@/assets/transition-rupture.jpg";
 import sectorMaterials from "@/assets/sector-materials.jpg";
 import sectorNutrition from "@/assets/sector-nutrition.jpg";
 import sectorPharma from "@/assets/sector-pharma.jpg";
@@ -42,7 +43,13 @@ export const home = {
     eyebrow: "The Transition Economy",
     title: "The animal supply chain is not at risk — it is actively breaking.",
     body: "Avian flu has destroyed >100M U.S. layer hens. Marine ingredients in aquafeed dropped from 25% to 3%. Western per-capita meat is in structural decline. We back the companies replacing what's failing — with humane, decarbonizing, regenerative innovation.",
-    image: heroEarth,
+    image: transitionRupture,
+    stats: [
+      { value: ">168M", label: "U.S. birds culled by H5N1 since Feb 2022" },
+      { value: "25% → 3%", label: "Marine ingredients in aquafeed (2000–2023)" },
+      { value: "+275%", label: "U.S. egg price surge post 18% flock depopulation" },
+      { value: "−6%", label: "EU & U.S. peak dairy herd decline YoY" },
+    ],
   },
   stats: [
     { value: "$175M", label: "AUM across two impact VC funds" },
@@ -109,42 +116,30 @@ export const funds = {
   },
   vehicles: [
     {
-      name: "Beyond Impact Fund I",
-      status: "Closed",
-      vintage: "2018",
-      size: "€30M",
+      name: "Beyond Impact Ventures",
+      status: "Flagship VC platform",
+      vintage: "2018 →",
+      size: "€55M+ AUM",
       tvpi: "2.3×",
-      focus: "Pan-European seed & Series A — animal-free nutrition, ingredients, materials.",
-      highlights: ["23 ventures", "Multiple unicorn-trajectory exits", "Article 9 SFDR"],
+      focus: "Article 9 SFDR venture funds investing seed → Series A across animal-free nutrition, ingredients, life sciences and materials. Luxembourg SICAV-RAIF umbrella with new sub-funds operational in ~6 weeks.",
+      highlights: ["Fund I (2018) — closed", "Fund II (2022) — active", "23+ portfolio companies", "Article 9 SFDR"],
     },
     {
-      name: "Beyond Impact Fund II",
-      status: "Active — final investment year",
-      vintage: "2022",
-      size: "$25M raised",
-      tvpi: "—",
-      focus: "Global mandate, 10 active investments to date.",
-      highlights: ["Series A focus", "Co-invest opportunities", "Article 9 SFDR"],
-    },
-    {
-      name: "UK Co-Investment Nominee",
+      name: "Co-Investments",
       status: "Open — rolling",
       vintage: "Ongoing",
       size: "Bespoke",
       tvpi: "—",
-      focus: "High-conviction follow-ons, secondaries and pro-rata participation.",
-      highlights: ["Diligence memos shared", "LP-aligned terms", "Sterling structure"],
-    },
-    {
-      name: "US Vegan Climate ETF (VEGN)",
-      status: "Live — CBOE listed",
-      vintage: "2019",
-      size: "Public",
-      tvpi: "—",
-      focus: "Sponsor and Adviser — public-market exposure to the transition economy.",
-      highlights: ["CBOE: VEGN", "Daily liquidity", "Public-market complement"],
+      focus: "Direct co-investment opportunities into high-conviction follow-ons, secondaries and pro-rata rounds alongside Beyond Impact Ventures. LP-aligned terms, full diligence memos shared.",
+      highlights: ["Single-asset vehicles", "Sterling & EUR structures", "LP-aligned terms"],
     },
   ],
+  sister: {
+    name: "Beyond Investing",
+    tag: "Sister entity",
+    desc: "Public-market platform for the transition economy — sponsor and adviser to the U.S. Vegan Climate ETF (CBOE: VEGN) and related listed strategies.",
+    cta: { label: "Visit beyondinvesting.com", href: "https://beyondinvesting.com" },
+  },
   philosophy: {
     title: "Scaling the impact, not the hype.",
     body: "Disciplined selection over market hype. Our specialist B2B filters protected the platform from high-profile capital traps — backing companies that started in high-margin niches and earned their way to scale.",
