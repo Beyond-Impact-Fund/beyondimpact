@@ -33,6 +33,11 @@ export const site = {
     { label: "Portfolio", href: "/portfolio" },
     { label: "Insights", href: "/insights" },
   ],
+  social: [
+    { label: "Twitter", href: "https://twitter.com/BeyondInvest" },
+    { label: "Facebook", href: "https://www.facebook.com/beyondinvesting/" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/company/beyond-impact-advisors/" },
+  ],
 };
 
 export const home = {
@@ -59,7 +64,7 @@ export const home = {
     ],
   },
   stats: [
-    { value: "$175M", label: "AUM across two impact VC funds" },
+    { value: "$191M", label: "AUM across two VC funds, co-investments and a public fund" },
     { value: "2.3×", label: "Fund I TVPI (Jan ’24)" },
     { value: "$1B+", label: "Raised by portfolio post-investment" },
     { value: "80+", label: "Years of combined team experience" },
@@ -154,7 +159,7 @@ export const about = {
         icon: "Sprout",
         name: "Biodiversity",
         points: [
-          "Track animal lives spared by replacing livestock products with ethical alternatives.",
+          "Track animal lives spared and suffering avoided by replacing livestock products with ethical alternatives.",
           "Quantify land liberation and rewilding from a reduced industrial-agriculture footprint.",
           "Measure net-positive ecosystem gains using standardised biodiversity restoration metrics.",
         ],
@@ -173,8 +178,8 @@ export const about = {
         name: "Health & Wellbeing",
         points: [
           "Combat chronic disease by removing harmful animal-based ingredients from global diets.",
+          "Reduce the rise of antibiotic-resistant microbes driven by routine livestock antibiotic use.",
           "Mitigate zoonotic pandemic risk by decoupling supply chains from factory farming.",
-          "Quantify the societal value of reduced healthcare burdens and improved public safety.",
         ],
       },
     ],
@@ -217,7 +222,7 @@ export const funds = {
   hero: {
     eyebrow: "Investment Strategy",
     title: "An impact fund platform — not a single fund.",
-    sub: "Luxembourg SICAV-RAIF umbrella, MC Square SA AIFM, Beyond Impact Advisors Sàrl as registered investment advisor. New sub-funds operational in ~6 weeks.",
+    sub: "Luxembourg SICAV-RAIF umbrella, with established AIFM and institutional-quality administration.",
     image: heroBio,
   },
   vehicles: [
@@ -236,19 +241,19 @@ export const funds = {
       vintage: "Ongoing",
       size: "Bespoke",
       tvpi: "—",
-      focus: "Direct co-investment opportunities into high-conviction follow-ons, secondaries and pro-rata rounds alongside Beyond Impact Ventures. LP-aligned terms, full diligence memos shared.",
-      highlights: ["Single-asset vehicles", "Sterling & EUR structures", "LP-aligned terms"],
+      focus: "Direct co-investment opportunities into high-conviction follow-ons, secondaries and pro-rata rounds alongside Beyond Impact Ventures. Investor-aligned terms, full diligence memos shared.",
+      highlights: ["Single-asset vehicles", "Sterling & EUR structures", "Investor-aligned terms"],
     },
   ],
   sister: {
     name: "Beyond Investing",
     tag: "Sister entity",
-    desc: "Public-market platform for the transition economy — sponsor and adviser to the U.S. Vegan Climate ETF (CBOE: VEGN) and related listed strategies.",
+    desc: "Public-market platform for the transition economy — sponsor and adviser to a US Exchange Traded Fund, and creator of ethical and sustainable stock indexes.",
     cta: { label: "Visit beyondinvesting.com", href: "https://beyondinvesting.com" },
   },
   philosophy: {
     title: "Scaling the impact, not the hype.",
-    body: "Disciplined selection over market hype. Our specialist B2B filters protected the platform from high-profile capital traps — backing companies that started in high-margin niches and earned their way to scale.",
+    body: "Disciplined selection over market hype. Our specific B2B filters protected the platform from high-profile capital traps — backing companies that started in high-margin niches and earned their way to scale.",
   },
 };
 
@@ -256,29 +261,29 @@ export const advisory = {
   hero: {
     eyebrow: "Advisory Services",
     title: "Impact Investing — as a Service.",
-    sub: "We help CSRs, philanthropists, INGOs and corporates design, structure and launch impact vehicles aligned with the transition towards a kinder, cleaner, healthier world.",
+    sub: "We help corporates, philanthropists and International NGOs design, structure and launch impact vehicles aligned with the transition towards a kinder, cleaner, healthier world.",
     image: heroLab,
   },
   thesis: {
-    title: "Your capital, our specialist thesis.",
-    body: "We bring nine years of pioneer impact-VC discipline to every mandate — anchored in one thesis: a kinder, cleaner, healthier world. Every vehicle we design is underwritten against the same three pillars we apply to our own funds — Biodiversity, Climate, and Health & Wellbeing — so impact is measured, not implied.",
+    title: "Your capital, our specific thesis.",
+    body: "We bring nine years of pioneer impact VC discipline to every mandate — anchored in one thesis: a kinder, cleaner, healthier world. Every vehicle we design is underwritten against the same three pillars we apply to our own funds — Biodiversity, Climate, and Health & Wellbeing — so impact is accurately measured.",
     pillars: [
-      { tag: "Biodiversity", body: "Animal lives spared, land liberated, ecosystems restored." },
+      { tag: "Biodiversity", body: "Animal lives spared and suffering avoided, land liberated, ecosystems restored." },
       { tag: "Climate", body: "Methane reduction, emission avoidance, Paris-aligned pathways." },
-      { tag: "Health", body: "Chronic disease reduction, zoonotic risk decoupling, public-safety gains." },
+      { tag: "Health", body: "Chronic disease reduction, antibiotic-resistant microbe risk, zoonotic risk decoupling, public-safety gains." },
     ],
     benefits: [
       "Additionality — net-new impact created by deployed capital",
       "Sustainability and liquidity for legacy grant programmes",
-      "Specialist origination across the transition economy",
+      "Specific origination across the transition economy",
       "Access to disruptive talent, models and distribution",
     ],
   },
   audiences: [
     {
-      tag: "CSRs",
-      name: "Corporate Social Responsibility",
-      body: "Beyond Impact manages CSR capital with no return expectations but 100%+ recycling — turning grant budgets into perpetual impact engines.",
+      tag: "Corporate Sustainability",
+      name: "Corporate Sustainability Programs",
+      body: "Beyond Impact manages corporate sustainability capital with no return expectations but 100%+ recycling — turning grant budgets into perpetual impact engines.",
       flow: "Invest + reinvest",
     },
     {
@@ -288,15 +293,15 @@ export const advisory = {
       flow: "Market returns",
     },
     {
-      tag: "INGOs",
+      tag: "International NGOs",
       name: "International NGOs",
-      body: "Like Corporations, INGOs invest in impact ventures to bring sustainability and reduce external dependencies — generating below-market returns that fund mission.",
+      body: "Like corporations, International NGOs invest in impact ventures to bring sustainability and reduce external dependencies — generating below-market returns that fund mission.",
       flow: "Below-market returns",
     },
     {
       tag: "Philanthropists",
       name: "Philanthropists & Foundations",
-      body: "Bespoke vehicles for HNW individuals and family foundations seeking deep specialist impact in animal-free, climate-aligned innovation.",
+      body: "Bespoke vehicles for HNW individuals and family foundations seeking deep specific impact in animal-free, climate-aligned innovation.",
       flow: "Mission-aligned",
     },
   ],
@@ -319,7 +324,7 @@ export const advisory = {
     {
       step: "04",
       title: "Launch & management",
-      body: "Launching and managing the fund — sourcing, selection, deal closures, portfolio management and LP reporting.",
+      body: "Launching and managing the fund — sourcing, selection, deal closures, portfolio management and investor reporting.",
     },
   ],
   cta: {
@@ -385,7 +390,7 @@ export const insights = {
     },
   ],
   newsletter: {
-    title: "Join the Vanguard.",
+    title: "Join the Trailblazers.",
     body: "Quarterly notes from the front of the transition economy. No spam, no pitchdecks — just signal.",
   },
 };

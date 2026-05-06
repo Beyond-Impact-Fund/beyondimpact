@@ -1,7 +1,13 @@
 import { Link } from "react-router-dom";
 import { site } from "@/content/site";
 import logoLight from "@/assets/beyond-logo-light.png";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Twitter, Facebook, Linkedin } from "lucide-react";
+
+const socialIcon = (label: string) => {
+  if (label === "Twitter") return Twitter;
+  if (label === "Facebook") return Facebook;
+  return Linkedin;
+};
 
 const Footer = () => {
   return (
@@ -45,13 +51,28 @@ const Footer = () => {
           </div>
 
           <div className="md:col-span-3">
-            <div className="eyebrow text-clay/60">Legal</div>
-            <ul className="mt-6 space-y-3 text-sm text-clay/70">
-              <li>Beyond Impact Advisors Sàrl</li>
-              <li>Luxembourg SICAV-RAIF</li>
-              <li>AIFM: MC Square SA</li>
-              <li>Article 9 (SFDR)</li>
+            <div className="eyebrow text-clay/60">Follow</div>
+            <ul className="mt-6 flex flex-wrap gap-3">
+              {site.social.map((s) => {
+                const Icon = socialIcon(s.label);
+                return (
+                  <li key={s.href}>
+                    <a
+                      href={s.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={s.label}
+                      className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-clay/25 text-clay/80 transition-colors hover:border-coral hover:text-coral"
+                    >
+                      <Icon className="h-4 w-4" />
+                    </a>
+                  </li>
+                );
+              })}
             </ul>
+            <div className="mt-8 text-xs leading-relaxed text-clay/55">
+              Luxembourg SICAV-RAIF · Article 9 (SFDR)
+            </div>
           </div>
         </div>
 

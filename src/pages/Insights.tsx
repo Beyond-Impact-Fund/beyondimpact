@@ -12,7 +12,7 @@ const Insights = () => {
   const submit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!email) return;
-    toast.success("Subscribed.", { description: "Welcome to the Vanguard." });
+    toast.success("Subscribed.", { description: "Welcome to the Trailblazers." });
     setEmail("");
   };
 
@@ -65,7 +65,7 @@ const Insights = () => {
         <div aria-hidden className="absolute -right-40 top-1/2 h-[500px] w-[500px] -translate-y-1/2 rounded-full bg-green/20 blur-3xl" />
         <div className="container-x relative grid gap-12 md:grid-cols-2 md:items-center">
           <div>
-            <div className="eyebrow text-coral">Vanguard Subscription</div>
+            <div className="eyebrow text-coral">Trailblazers Subscription</div>
             <h2 className="display mt-6 text-5xl text-clay md:text-6xl">
               {insights.newsletter.title}
             </h2>
