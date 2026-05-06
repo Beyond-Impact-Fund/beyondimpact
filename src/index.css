@@ -15,7 +15,7 @@
     --navy-deep: 209 100% 8%;
     --green: 133 36% 54%;          /* #5DB77A */
     --green-soft: 133 35% 88%;
-    --coral: 205 100% 19%;         /* #003F61 — secondary brand blue (replaces orange) */
+    --coral: 133 36% 54%;          /* Aliased to brand green #5DB77A — used as accent on navy for contrast */
     --clay: 36 27% 95%;            /* #F5F2ED */
     --clay-warm: 36 30% 92%;
 
