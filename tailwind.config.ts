@@ -12,9 +12,9 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        display: ['"Space Grotesk"', 'sans-serif'],
-        script: ['Pacifico', 'cursive'],
+        sans: ['"Source Sans 3"', 'system-ui', 'sans-serif'],
+        display: ['"Source Sans 3"', 'sans-serif'],
+        script: ['Sacramento', 'cursive'],
       },
       colors: {
         border: "hsl(var(--border))",
