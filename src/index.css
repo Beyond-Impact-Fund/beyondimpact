@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200;300;400;500;600;700&family=Sacramento&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -73,8 +73,8 @@
   * { @apply border-border; }
   html { scroll-behavior: smooth; }
   body {
-    @apply bg-background text-foreground antialiased;
-    font-feature-settings: "ss01", "cv11";
+    @apply bg-background text-foreground antialiased font-sans;
+    font-family: 'Source Sans 3', 'Source Sans Pro', system-ui, sans-serif;
   }
   ::selection { background: hsl(var(--green) / 0.4); color: hsl(var(--navy)); }
 }
