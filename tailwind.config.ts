@@ -12,8 +12,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['"Source Sans 3"', 'system-ui', 'sans-serif'],
-        display: ['"Source Sans 3"', 'sans-serif'],
+        sans: ['"Trebuchet MS"', '"Lucida Grande"', 'Tahoma', 'sans-serif'],
+        display: ['Roboto', 'system-ui', 'sans-serif'],
         script: ['Sacramento', 'cursive'],
       },
       colors: {
