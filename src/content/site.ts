@@ -67,7 +67,7 @@ export const home = {
     { value: "$191M", label: "AUM across two VC funds, co-investments and a public fund" },
     { value: "2.3×", label: "Fund I TVPI (Jan ’24)" },
     { value: "$1B+", label: "Raised by portfolio post-investment" },
-    { value: "80+", label: "Years of combined team experience" },
+    { value: "100+", label: "Years of combined team investing experience" },
   ],
   sectors: [
     { name: "Advanced Nutrition", desc: "New protein sources, human & pet nutrition.", image: sectorNutrition, market: "$1.9T" },
@@ -115,7 +115,7 @@ export const about = {
       bio: "Founder of Beyond Investing and Beyond Animal platform. 35+ years of financial management experience. Head of Equity Quantitative Strategies at Albourne Partners Limited, Head of Investor Derivative Marketing at UBS, and Head of Convertible Sales at Swiss Bank Corporation. Among the earliest investors in Geltor, EVERY, Mosa Meat, Supermeat and BlueNalu.",
     },
     {
-      name: "Tarja Zudeberg",
+      name: "Tarja Zudemberg",
       role: "Partner",
       flags: "🇫🇮 🇸🇪",
       photo: teamTarja,
