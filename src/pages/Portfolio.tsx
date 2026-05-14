@@ -70,10 +70,6 @@ const Portfolio = () => {
                     {c.sector} · {c.fund}
                   </div>
                   <p className="mt-5 text-sm leading-relaxed text-navy/70">{c.desc}</p>
-                  <div className="mt-6 flex items-end justify-between border-t border-navy/10 pt-4">
-                    <div className="text-[11px] uppercase tracking-wider text-navy/50">Total raised</div>
-                    <div className="display text-lg text-navy">{c.raised}</div>
-                  </div>
                 </motion.article>
               ))}
             </AnimatePresence>
