@@ -8,12 +8,12 @@ const Portfolio = () => {
   const [filter, setFilter] = useState<string>("All");
 
   const funds = useMemo(
-    () => ["All", ...Array.from(new Set(portfolio.companies.map((c) => c.fund)))],
+    () => ["All", ...Array.from(new Set(portfolio.companies.flatMap((c) => c.funds)))],
     []
   );
 
   const filtered = useMemo(
-    () => (filter === "All" ? portfolio.companies : portfolio.companies.filter((c) => c.fund === filter)),
+    () => (filter === "All" ? portfolio.companies : portfolio.companies.filter((c) => c.funds.includes(filter))),
     [filter]
   );
 
@@ -67,7 +67,7 @@ const Portfolio = () => {
                     </span>
                   </div>
                   <div className="mt-2 text-xs uppercase tracking-wider text-coral">
-                    {c.sector} · {c.fund}
+                    {c.sector} · {c.funds.join(" & ")}
                   </div>
                   <p className="mt-5 text-sm leading-relaxed text-navy/70">{c.desc}</p>
                 </motion.article>
