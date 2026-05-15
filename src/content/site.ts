@@ -29,6 +29,7 @@ export const site = {
   navLinks: [
     { label: "About", href: "/about" },
     { label: "Funds", href: "/funds" },
+    { label: "Blue Economy", href: "/blue-economy" },
     { label: "Advisory", href: "/advisory" },
     { label: "Portfolio", href: "/portfolio" },
     { label: "Insights", href: "/insights" },
@@ -38,6 +39,12 @@ export const site = {
     { label: "Facebook", href: "https://www.facebook.com/beyondinvesting/" },
     { label: "LinkedIn", href: "https://www.linkedin.com/company/beyond-impact-advisors/" },
   ],
+  funding: {
+    label: "Apply for funding",
+    intro: "If you are building a venture relevant to our thesis, apply:",
+    href: "https://bit.ly/fundregenerative",
+    display: "bit.ly/fundregenerative",
+  },
 };
 
 export const home = {
@@ -229,18 +236,12 @@ export const funds = {
     {
       name: "Beyond Impact Ventures",
       status: "Flagship VC platform",
-      vintage: "2018 →",
-      size: "€55M+ AUM",
-      tvpi: "2.3×",
-      focus: "Article 9 SFDR venture funds investing seed → Series A across animal-free nutrition, ingredients, life sciences and materials. Luxembourg SICAV-RAIF umbrella with new sub-funds operational in ~6 weeks.",
-      highlights: ["Fund I (2018) — closed", "Fund II (2022) — active", "23+ portfolio companies", "Article 9 SFDR"],
+      focus: "Article 9 SFDR venture funds investing seed → Series A across animal-free nutrition, ingredients, life sciences and materials, structured under a Luxembourg SICAV-RAIF umbrella.",
+      highlights: ["Fund I — closed", "Fund II — active", "23+ portfolio companies", "Article 9 SFDR"],
     },
     {
       name: "Co-Investments",
       status: "Open — rolling",
-      vintage: "Ongoing",
-      size: "Bespoke",
-      tvpi: "—",
       focus: "Direct co-investment opportunities into high-conviction follow-ons, secondaries and pro-rata rounds alongside Beyond Impact Ventures. Investor-aligned terms, full diligence memos shared.",
       highlights: ["Single-asset vehicles", "Sterling & EUR structures", "Investor-aligned terms"],
     },
@@ -339,7 +340,7 @@ export const portfolio = {
   hero: {
     eyebrow: "Portfolio",
     title: "A working directory of the transition economy.",
-    sub: "Active holdings across Beyond Impact Venture Partners (Fund I) and Beyond Impact SICAV RAIF – Vegan 1 (Fund II). Filter by fund, sector or geography.",
+    sub: "Active holdings across Fund I and Fund II. Filter by fund, sector or geography.",
   },
   companies: [
     // Fund I & II shared
@@ -407,4 +408,75 @@ export const insights = {
     title: "Join the Trailblazers.",
     body: "Quarterly notes from the front of the transition economy. No spam, no pitchdecks — just signal.",
   },
+};
+
+export const blueEconomy = {
+  hero: {
+    eyebrow: "Press Release · 13 April 2026",
+    title: "Beyond Impact and UMITO Partners launch a strategic partnership for the Blue Economy.",
+    sub: "Advancing the global \"New Blue Economy\" — bridging Europe, Japan and Asia-Pacific to scale ocean innovation across food, biotech, clean tech and climate solutions.",
+    sourceLabel: "Originally published on umitopartners.com",
+    sourceHref: "https://umitopartners.com/en/2026/04/beyondimpact-partnership/",
+  },
+  intro: [
+    "UMITO Partners, a Japan-based ocean sustainability consulting platform, and Beyond Impact, a Europe-based impact investment platform focused on innovative technology, today announced a strategic partnership to accelerate the blue economy through impact investment and ecosystem building for a resilient ocean across Europe, Japan, and Asia-Pacific.",
+    "This partnership aims to bridge Europe, Japan and Asia-Pacific's advanced ocean technologies with industrial and implementation capabilities, enabling scalable ocean innovations to drive ocean resilience while accelerating economic growth.",
+  ],
+  sections: [
+    {
+      title: "Why Blue Economy collaboration, and why now",
+      body: [
+        "The ocean sits at the intersection of economic growth, food security, climate stability, and biodiversity. According to the OECD, the ocean economy is projected to expand from approximately USD 1.5 trillion in 2010 to USD 3 trillion by 2030.",
+        "Yet a significant financing gap remains for sustainable ocean initiatives, and many promising technologies and business models have yet to translate into scalable, commercially viable solutions.",
+        "Meanwhile global protein demand is projected to rise 35–56% by 2050, while wild capture fisheries have plateaued at ~92 million tonnes annually and agricultural land already occupies nearly half of the world's habitable land. Food systems account for ~21–37% of global greenhouse gas emissions.",
+        "Against this backdrop, the ocean sector is undergoing a structural transition — from an extractive \"take and use\" model to a regenerative model that leverages technology to enhance sustainability and resilience.",
+      ],
+    },
+    {
+      title: "Emerging regenerative industries",
+      list: [
+        "B2B alternative protein platforms supplying high-value functional ingredients",
+        "Next-generation aquaculture systems enabling sustainable, scalable seafood production",
+        "Algae and microbial production platforms for feed, protein and industrial applications",
+        "Marine biotechnology applied to pharmaceuticals, biomaterials and nutrition",
+        "Decarbonization technologies in maritime sectors, including low-carbon fuels and vessel efficiency",
+        "Port electrification, ocean monitoring, and environmental data infrastructure",
+        "Nature-based solutions such as ocean carbon removal and biodiversity restoration",
+      ],
+    },
+    {
+      title: "From mitigation to additionality",
+      body: [
+        "Europe has built strong capabilities in ocean deep tech and R&D, but opportunities for real-world deployment and commercialization remain limited. Japan and broader Asia offer robust implementation platforms through fisheries and coastal industries, but often lack access to advanced technologies and global innovation networks.",
+        "By combining their respective strengths, the two organizations aim to build an implementation model that connects technology, on-the-ground ecosystems and markets — evolving ocean impact from mitigation to additionality: creating entirely new forms of value that restore ecosystems while generating sustainable economic opportunities.",
+      ],
+    },
+    {
+      title: "Scope of the partnership",
+      list: [
+        "Connecting ocean startups across Europe, Japan and Asia with established industrial ecosystems",
+        "Joint analysis of technological trends and market opportunities in the ocean domain",
+        "Supporting partnerships to enable pilot projects and commercialization",
+        "Building cross-border ecosystems through international networks",
+      ],
+    },
+    {
+      title: "Outlook — the Blue Frontier Fund",
+      body: [
+        "UMITO Partners and Beyond Impact will work to establish a cross-regional collaboration platform spanning Europe, Japan and Asia. At the core is the development of an international ecosystem — the \"Blue Frontier Fund\" — designed to connect ocean technologies with real-world implementation environments across food tech, biotechnology, ocean tech, clean tech and climate solutions.",
+      ],
+    },
+  ],
+  quotes: [
+    {
+      who: "Shunji Murakami",
+      role: "CEO, UMITO Partners",
+      text: "The ocean environment is undergoing rapid transformation, with direct implications for the foundations of our societies and industries. This partnership represents a concrete step toward connecting advanced European technologies with implementation platforms in Japan and Asia to build an ecosystem that enables a new ocean economy.",
+    },
+    {
+      who: "Claire Smith",
+      role: "CEO, Beyond Impact",
+      text: "Ocean innovation is entering a phase where scientific breakthroughs must translate into scalable industrial solutions. Through this partnership with UMITO Partners, we are connecting Europe's deep tech ecosystem with Asia's ocean industries, creating a platform that can accelerate real-world implementation and systemic change.",
+    },
+  ],
 };

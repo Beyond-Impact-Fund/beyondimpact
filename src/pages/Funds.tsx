@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import { ArrowUpRight } from "lucide-react";
 import Layout from "@/components/Layout";
 import PageHero from "@/components/PageHero";
 import { funds } from "@/content/site";
@@ -38,22 +40,7 @@ const Funds = () => {
                   </span>
                 </div>
 
-                <div className="mt-6 grid grid-cols-3 gap-4 border-y border-navy/10 py-5">
-                  <div>
-                    <div className="text-[11px] uppercase tracking-wider text-navy/50">Vintage</div>
-                    <div className="display mt-1 text-lg text-navy">{f.vintage}</div>
-                  </div>
-                  <div>
-                    <div className="text-[11px] uppercase tracking-wider text-navy/50">Size</div>
-                    <div className="display mt-1 text-lg text-navy">{f.size}</div>
-                  </div>
-                  <div>
-                    <div className="text-[11px] uppercase tracking-wider text-navy/50">TVPI</div>
-                    <div className="display mt-1 text-lg text-coral">{f.tvpi}</div>
-                  </div>
-                </div>
-
-                <p className="mt-6 text-navy/70 leading-relaxed">{f.focus}</p>
+                <p className="mt-6 text-navy/75 leading-relaxed">{f.focus}</p>
                 <ul className="mt-6 flex flex-wrap gap-2">
                   {f.highlights.map((h) => (
                     <li key={h} className="rounded-full bg-green/10 px-3 py-1 text-xs font-medium text-green">
@@ -87,6 +74,33 @@ const Funds = () => {
               </span>
             </div>
           </motion.a>
+
+          {/* BLUE ECONOMY */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mt-6"
+          >
+            <Link
+              to="/blue-economy"
+              className="group grid gap-6 bg-green p-8 text-clay shadow-soft hover:shadow-elevated transition-shadow md:grid-cols-12 md:items-center md:p-12"
+            >
+              <div className="md:col-span-3">
+                <div className="text-[11px] uppercase tracking-wider text-clay/80">New initiative</div>
+                <div className="display mt-2 text-3xl text-clay md:text-4xl">Blue Economy</div>
+              </div>
+              <p className="text-clay/90 leading-relaxed md:col-span-7">
+                Strategic partnership with UMITO Partners to accelerate ocean innovation across Europe, Japan and Asia-Pacific — building toward the Blue Frontier Fund.
+              </p>
+              <div className="md:col-span-2 md:text-right">
+                <span className="inline-flex items-center gap-2 rounded-full border border-clay/40 px-5 py-3 text-sm font-medium text-clay transition-colors group-hover:bg-coral group-hover:border-coral">
+                  Read more <ArrowUpRight className="h-4 w-4" />
+                </span>
+              </div>
+            </Link>
+          </motion.div>
         </div>
       </section>
 
