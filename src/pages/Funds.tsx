@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import { ArrowUpRight } from "lucide-react";
 import Layout from "@/components/Layout";
 import PageHero from "@/components/PageHero";
 import { funds } from "@/content/site";
@@ -38,22 +40,7 @@ const Funds = () => {
                   </span>
                 </div>
 
-                <div className="mt-6 grid grid-cols-3 gap-4 border-y border-navy/10 py-5">
-                  <div>
-                    <div className="text-[11px] uppercase tracking-wider text-navy/50">Vintage</div>
-                    <div className="display mt-1 text-lg text-navy">{f.vintage}</div>
-                  </div>
-                  <div>
-                    <div className="text-[11px] uppercase tracking-wider text-navy/50">Size</div>
-                    <div className="display mt-1 text-lg text-navy">{f.size}</div>
-                  </div>
-                  <div>
-                    <div className="text-[11px] uppercase tracking-wider text-navy/50">TVPI</div>
-                    <div className="display mt-1 text-lg text-coral">{f.tvpi}</div>
-                  </div>
-                </div>
-
-                <p className="mt-6 text-navy/70 leading-relaxed">{f.focus}</p>
+                <p className="mt-6 text-navy/75 leading-relaxed">{f.focus}</p>
                 <ul className="mt-6 flex flex-wrap gap-2">
                   {f.highlights.map((h) => (
                     <li key={h} className="rounded-full bg-green/10 px-3 py-1 text-xs font-medium text-green">
