@@ -40,10 +40,16 @@ export const site = {
     { label: "LinkedIn", href: "https://www.linkedin.com/company/beyond-impact-advisors/" },
   ],
   funding: {
-    label: "Apply for funding",
-    intro: "If you are building a venture relevant to our thesis, apply:",
+    label: "Submit your fundraise",
+    intro: "If you are building a venture relevant to our thesis, we'd love to hear from you.",
     href: "https://bit.ly/fundregenerative",
-    display: "bit.ly/fundregenerative",
+    display: "Submit your fundraise",
+  },
+  investors: {
+    label: "Register your interest",
+    intro: "Investors interested in Beyond Impact and its products can register interest here.",
+    href: "https://share.hsforms.com/1sLQdL_wxSiSpkrZHLNMJAwbovuv",
+    display: "Register your interest",
   },
 };
 
