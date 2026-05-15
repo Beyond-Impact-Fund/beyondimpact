@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import Layout from "@/components/Layout";
 import PageHero from "@/components/PageHero";
-import { blueEconomy } from "@/content/site";
+import { blueEconomy, site } from "@/content/site";
 
 const BlueEconomy = () => {
   return (
