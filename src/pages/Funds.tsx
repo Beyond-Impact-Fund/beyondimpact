@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
 import Layout from "@/components/Layout";
 import PageHero from "@/components/PageHero";
-import { funds } from "@/content/site";
+import { funds, site } from "@/content/site";
 
 const Funds = () => {
   return (
