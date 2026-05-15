@@ -77,6 +77,25 @@ const BlueEconomy = () => {
               </figure>
             ))}
           </div>
+
+          {/* INVESTOR CTA */}
+          <div className="mt-16 grid gap-6 bg-navy p-8 text-clay shadow-soft md:grid-cols-12 md:items-center md:p-12">
+            <div className="md:col-span-8">
+              <div className="eyebrow text-green">For investors</div>
+              <p className="mt-3 text-clay/85 leading-relaxed">{site.investors.intro}</p>
+            </div>
+            <div className="md:col-span-4 md:text-right">
+              <a
+                href={site.investors.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full bg-green px-6 py-3 text-sm font-medium text-clay transition-colors hover:bg-green/90"
+              >
+                {site.investors.display}
+                <ArrowUpRight className="h-4 w-4" />
+              </a>
+            </div>
+          </div>
         </div>
       </section>
     </Layout>
