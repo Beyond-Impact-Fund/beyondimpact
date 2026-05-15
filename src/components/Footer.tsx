@@ -76,6 +76,27 @@ const Footer = () => {
           </div>
         </div>
 
+        {/* APPLY FOR FUNDING */}
+        <div className="mt-16 grid gap-4 border-t border-clay/15 pt-8 md:grid-cols-12 md:items-center">
+          <div className="md:col-span-8">
+            <div className="eyebrow text-coral">For founders</div>
+            <p className="mt-3 text-clay/85 leading-relaxed">
+              {site.funding.intro}
+            </p>
+          </div>
+          <div className="md:col-span-4 md:text-right">
+            <a
+              href={site.funding.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full bg-coral px-6 py-3 text-sm font-medium text-clay transition-colors hover:bg-coral/90"
+            >
+              {site.funding.display}
+              <ArrowUpRight className="h-4 w-4" />
+            </a>
+          </div>
+        </div>
+
         <div className="mt-16 flex flex-col items-start justify-between gap-4 border-t border-clay/15 pt-8 text-xs text-clay/55 md:flex-row md:items-center">
           <div>© {new Date().getFullYear()} Beyond Impact. Confidential and subject to disclaimer.</div>
           <div>Pioneer Impact VC · Est. {site.founded}</div>
