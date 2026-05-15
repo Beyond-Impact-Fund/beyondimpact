@@ -29,6 +29,7 @@ export const site = {
   navLinks: [
     { label: "About", href: "/about" },
     { label: "Funds", href: "/funds" },
+    { label: "Blue Economy", href: "/blue-economy" },
     { label: "Advisory", href: "/advisory" },
     { label: "Portfolio", href: "/portfolio" },
     { label: "Insights", href: "/insights" },
