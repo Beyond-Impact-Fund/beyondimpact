@@ -1,0 +1,86 @@
+import { motion } from "framer-motion";
+import { ArrowUpRight } from "lucide-react";
+import Layout from "@/components/Layout";
+import PageHero from "@/components/PageHero";
+import { blueEconomy } from "@/content/site";
+
+const BlueEconomy = () => {
+  return (
+    <Layout navVariant="dark">
+      <PageHero
+        eyebrow={blueEconomy.hero.eyebrow}
+        title={
+          <>
+            A strategic partnership for the <span className="script text-coral">Blue Economy</span>.
+          </>
+        }
+        sub={blueEconomy.hero.sub}
+      />
+
+      <section className="bg-clay py-20 md:py-28">
+        <div className="container-x max-w-4xl">
+          <a
+            href={blueEconomy.hero.sourceHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-sm uppercase tracking-wider text-green hover:text-coral transition-colors"
+          >
+            {blueEconomy.hero.sourceLabel}
+            <ArrowUpRight className="h-4 w-4" />
+          </a>
+
+          <div className="mt-10 space-y-6 text-lg text-navy/80 leading-relaxed">
+            {blueEconomy.intro.map((p, i) => (
+              <p key={i}>{p}</p>
+            ))}
+          </div>
+
+          {blueEconomy.sections.map((s, i) => (
+            <motion.div
+              key={s.title}
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: i * 0.05 }}
+              className="mt-16 border-t border-navy/15 pt-10"
+            >
+              <h2 className="display text-3xl text-navy md:text-4xl">{s.title}</h2>
+              {"body" in s && s.body && (
+                <div className="mt-6 space-y-5 text-navy/75 leading-relaxed">
+                  {s.body.map((p, j) => (
+                    <p key={j}>{p}</p>
+                  ))}
+                </div>
+              )}
+              {"list" in s && s.list && (
+                <ul className="mt-6 space-y-3">
+                  {s.list.map((item) => (
+                    <li key={item} className="flex gap-3 text-navy/80">
+                      <span className="mt-2 inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-coral" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </motion.div>
+          ))}
+
+          <div className="mt-20 grid gap-6 md:grid-cols-2">
+            {blueEconomy.quotes.map((q) => (
+              <figure key={q.who} className="bg-card p-8 shadow-soft">
+                <blockquote className="display text-xl text-navy leading-snug">
+                  "{q.text}"
+                </blockquote>
+                <figcaption className="mt-6 text-sm uppercase tracking-wider text-coral">
+                  {q.who} <span className="text-navy/55">— {q.role}</span>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+      </section>
+    </Layout>
+  );
+};
+
+export default BlueEconomy;

@@ -8,6 +8,7 @@ import About from "./pages/About.tsx";
 import Funds from "./pages/Funds.tsx";
 import Advisory from "./pages/Advisory.tsx";
 import Portfolio from "./pages/Portfolio.tsx";
+import BlueEconomy from "./pages/BlueEconomy.tsx";
 import Insights from "./pages/Insights.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/funds" element={<Funds />} />
           <Route path="/advisory" element={<Advisory />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/blue-economy" element={<BlueEconomy />} />
           <Route path="/insights" element={<Insights />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
