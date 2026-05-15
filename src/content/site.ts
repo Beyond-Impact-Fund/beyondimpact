@@ -38,6 +38,12 @@ export const site = {
     { label: "Facebook", href: "https://www.facebook.com/beyondinvesting/" },
     { label: "LinkedIn", href: "https://www.linkedin.com/company/beyond-impact-advisors/" },
   ],
+  funding: {
+    label: "Apply for funding",
+    intro: "If you are building a venture relevant to our thesis, apply:",
+    href: "https://bit.ly/fundregenerative",
+    display: "bit.ly/fundregenerative",
+  },
 };
 
 export const home = {
@@ -229,18 +235,12 @@ export const funds = {
     {
       name: "Beyond Impact Ventures",
       status: "Flagship VC platform",
-      vintage: "2018 →",
-      size: "€55M+ AUM",
-      tvpi: "2.3×",
-      focus: "Article 9 SFDR venture funds investing seed → Series A across animal-free nutrition, ingredients, life sciences and materials. Luxembourg SICAV-RAIF umbrella with new sub-funds operational in ~6 weeks.",
-      highlights: ["Fund I (2018) — closed", "Fund II (2022) — active", "23+ portfolio companies", "Article 9 SFDR"],
+      focus: "Article 9 SFDR venture funds investing seed → Series A across animal-free nutrition, ingredients, life sciences and materials, structured under a Luxembourg SICAV-RAIF umbrella.",
+      highlights: ["Fund I — closed", "Fund II — active", "23+ portfolio companies", "Article 9 SFDR"],
     },
     {
       name: "Co-Investments",
       status: "Open — rolling",
-      vintage: "Ongoing",
-      size: "Bespoke",
-      tvpi: "—",
       focus: "Direct co-investment opportunities into high-conviction follow-ons, secondaries and pro-rata rounds alongside Beyond Impact Ventures. Investor-aligned terms, full diligence memos shared.",
       highlights: ["Single-asset vehicles", "Sterling & EUR structures", "Investor-aligned terms"],
     },
@@ -339,7 +339,7 @@ export const portfolio = {
   hero: {
     eyebrow: "Portfolio",
     title: "A working directory of the transition economy.",
-    sub: "Active holdings across Beyond Impact Venture Partners (Fund I) and Beyond Impact SICAV RAIF – Vegan 1 (Fund II). Filter by fund, sector or geography.",
+    sub: "Active holdings across Fund I and Fund II. Filter by fund, sector or geography.",
   },
   companies: [
     // Fund I & II shared
