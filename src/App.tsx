@@ -10,6 +10,7 @@ import Advisory from "./pages/Advisory.tsx";
 import Portfolio from "./pages/Portfolio.tsx";
 import BlueEconomy from "./pages/BlueEconomy.tsx";
 import Insights from "./pages/Insights.tsx";
+import InsightDetail from "./pages/InsightDetail.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/blue-economy" element={<BlueEconomy />} />
           <Route path="/insights" element={<Insights />} />
+          <Route path="/insights/:slug" element={<InsightDetail />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
