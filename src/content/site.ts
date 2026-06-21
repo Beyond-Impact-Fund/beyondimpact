@@ -55,11 +55,11 @@ export const site = {
 
 export const home = {
   hero: {
-    eyebrow: "Pioneer Impact VC · Est. 2017",
+    eyebrow: "Pioneer Impact VC · Article 9 SFDR · Est. 2017",
     headlineLead: "Capital for the",
     headlineScript: "transition",
     headlineRest: "economy.",
-    sub: "Beyond Impact is a venture platform investing in superior, scalable, sustainable solutions across nutrition, ingredients, life sciences and materials — engineered for resilience as animal-derived supply chains break.",
+    sub: "Beyond Impact is an Article 9 SFDR impact fund platform investing in superior, scalable, and sustainable biosolutions across global developed markets — a pioneer impact venture capital, climate VC and bioeconomy investor across alternative protein, ingredients, life sciences and biomaterials.",
     primaryCta: { label: "Explore the platform", href: "/funds" },
     secondaryCta: { label: "Read our thesis", href: "/about" },
     image: heroFields,
@@ -97,9 +97,9 @@ export const home = {
 
 export const about = {
   hero: {
-    eyebrow: "About",
+    eyebrow: "About — Impact VC, Climate VC, Bioeconomy Investor",
     title: "Pioneer impact VC, built on conviction.",
-    sub: "Founded by Claire Smith in 2017, Beyond Impact has been a pioneer in providing venture capital for the transition towards a kinder, cleaner, healthier world. Article 9 (SFDR) classified.",
+    sub: "Founded by Claire Smith in 2017, Beyond Impact is an Article 9 (SFDR) impact venture capital platform — a pioneer impact VC, climate investor and bioeconomy investor backing vegan, biodiversity-positive biosolutions and alternative protein across global developed markets.",
     image: heroLab,
   },
   values: [
@@ -125,42 +125,42 @@ export const about = {
       role: "Founder & CIO",
       flags: "🇨🇭 🇮🇹 🇬🇧",
       photo: teamClaire,
-      bio: "Founder of Beyond Investing and Beyond Animal platform. 35+ years of financial management experience. Head of Equity Quantitative Strategies at Albourne Partners Limited, Head of Investor Derivative Marketing at UBS, and Head of Convertible Sales at Swiss Bank Corporation. Among the earliest investors in Geltor, EVERY, Mosa Meat, Supermeat and BlueNalu.",
+      bio: "Founder of Beyond Investing and the Beyond Animal platform with 35+ years of financial management experience. Former Head of Equity Quantitative Strategies at Albourne Partners Limited, Head of Investor Derivative Marketing at UBS, and Head of Convertible Sales at Swiss Bank Corporation. Among the earliest investors in Geltor, EVERY, Mosa Meat, SuperMeat and BlueNalu.",
     },
     {
       name: "Tarja Zudemberg",
       role: "Partner",
       flags: "🇫🇮 🇸🇪",
       photo: teamTarja,
-      bio: "20+ years of experience in venture capital, impact investing, and SME financing. An active angel investor, investing in early-stage Nordic startups focused on sustainable goals. Previously 13 years as CEO and Fund Manager at Almi Invest, executing over 100 transactions across 60+ portfolio companies and holding 30 board seats.",
+      bio: "20+ years of direct experience in venture capital, impact investing and SME financing. Spent 13 years as CEO and Fund Manager at Almi Invest, executing 100+ transactions across 60+ portfolio companies and holding 30 board seats. Active angel investor in early-stage Nordic startups focused on sustainable goals.",
     },
     {
       name: "Sagar Tandon",
       role: "Partner",
       flags: "🇮🇳 🇫🇮 🇳🇱",
       photo: teamSagar,
-      bio: "Involved in setting up 2 funds — Gray Matters Capital (family office managing over $200 million in AUM), edLABS & Australian Govt. DFAT-backed impact fund. Led investments in over 20 early-stage companies. Mentor at Good Food Institute India & APAC, FI Food APAC and Fashion for Good, Netherlands. Advisor at 2X Global Forum and 2X Ignite.",
+      bio: "Specialised bioeconomy fund designer. Historically involved in setting up multiple impact funds, including Gray Matters Capital (family office managing over $200 million in AUM), edLABS, and an Australian Government DFAT-backed impact fund. Active Mentor at the Good Food Institute India & APAC, FI Food APAC, and Fashion for Good (Netherlands). Advisor at 2X Global Forum and 2X Ignite.",
     },
     {
       name: "Anthony Stam",
       role: "Partner",
       flags: "🇨🇭 🇳🇱",
       photo: teamAnthony,
-      bio: "20+ years of experience in Private Equity, M&A and Corporate Finance in Europe and North America. Extensive experience in investments across the capital structure (equity, structured equity, mezzanine and debt).",
+      bio: "20+ years of direct experience in Private Equity, M&A and Corporate Finance across Europe and North America, with extensive focus across complex capital structures — including equity, structured equity, mezzanine and debt.",
     },
     {
       name: "Hanna Y. Gabay",
       role: "Partner",
       flags: "🇮🇱 🇫🇷",
       photo: teamHanna,
-      bio: "20+ years of Operational experience, Program Management and Scale-up. Served on several not-for-profit boards, currently chairwoman at Freedom 4 Animals and Director of Global Campaigns for Plant-Based Treaty and the Animal Save Movement. Portfolio Board Representation: Les Nouveaux Affineurs (Observer).",
+      bio: "20+ years of operational experience, program management and scale-up execution. Serves on several not-for-profit boards — currently acting as Chairwoman at Freedom 4 Animals and Director of Global Campaigns for the Plant-Based Treaty and the Animal Save Movement. Portfolio board representative (Observer) at Les Nouveaux Affineurs.",
     },
     {
       name: "Jody Rasch",
       role: "Partner",
       flags: "🇺🇸",
       photo: teamJody,
-      bio: "Pioneer alternative protein investor. Former Trustee — VegInvest, Board of VegFund, Woodstock Farm Sanctuary, Advisor to Crowdbureau. VegInvest was an early investor in Wild Earth, Clara Foods, Geltor, BlueNalu, Veggie Grill, NutPods, Just Inc. and others. Portfolio Board Representation: Renewal Mill (Board Member).",
+      bio: "Pioneer alternative protein investor. Former Trustee at VegInvest, Board Member at VegFund and Woodstock Farm Sanctuary, and Advisor to Crowdbureau. Early vehicle backing includes Wild Earth, Clara Foods, Geltor, BlueNalu, Veggie Grill, NutPods and Just Inc. Portfolio board representation at Renewal Mill.",
     },
   ],
   impactPillars: {
@@ -199,6 +199,11 @@ export const about = {
   },
   awards: [
     {
+      year: "2026",
+      issuer: "ImpactAssets IA 50",
+      title: "Emerging Impact Manager — 15 Years of IA 50",
+    },
+    {
       year: "2024",
       issuer: "Wealth & Finance — Ethical Finance Awards",
       title: "Best Impact-Focused Fund Management Firm",
@@ -209,24 +214,19 @@ export const about = {
       title: "Best Investment Company",
     },
     {
-      year: "2026",
-      issuer: "ImpactAssets IA 50",
-      title: "Emerging Impact Manager — 15 Years of IA 50",
-    },
-    {
       year: "2023",
       issuer: "Environmental Finance — Sustainable Investment Awards",
       title: "Environmental Fund of the Year — Global",
     },
     {
-      year: "—",
+      year: "Certified",
       issuer: "ESG AAA Rating",
       title: "Best ESG Fund — Climate Focused",
     },
     {
-      year: "—",
-      issuer: "ESG AAA Rating",
-      title: "Best ESG Fund",
+      year: "Classified",
+      issuer: "SFDR Classification",
+      title: "Article 9 (SFDR) Impact Fund Platform",
     },
   ],
 };
