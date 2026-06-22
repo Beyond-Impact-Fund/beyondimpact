@@ -72,7 +72,7 @@ const BlueEconomy = () => {
                   "{q.text}"
                 </blockquote>
                 <figcaption className="mt-6 text-sm uppercase tracking-wider text-coral">
-                  {q.who} <span className="text-navy/55">— {q.role}</span>
+                  {q.who} <span className="text-navy/70">— {q.role}</span>
                 </figcaption>
               </figure>
             ))}

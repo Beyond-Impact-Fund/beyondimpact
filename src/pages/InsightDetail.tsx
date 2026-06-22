@@ -63,7 +63,7 @@ const InsightDetail = () => {
                     >
                       "{block.text}"
                       {block.cite && (
-                        <footer className="mt-3 text-sm not-italic text-navy/55">— {block.cite}</footer>
+                        <footer className="mt-3 text-sm not-italic text-navy/70">— {block.cite}</footer>
                       )}
                     </blockquote>
                   );

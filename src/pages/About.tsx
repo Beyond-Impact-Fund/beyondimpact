@@ -145,7 +145,7 @@ const About = () => {
               >
                 <div className="flex items-baseline justify-between">
                   <span className="display text-sm uppercase tracking-wider text-coral">{a.issuer}</span>
-                  <span className="text-xs uppercase tracking-wider text-navy/50">{a.year}</span>
+                  <span className="text-xs uppercase tracking-wider text-navy/70">{a.year}</span>
                 </div>
                 <h3 className="display mt-4 text-xl text-navy">{a.title}</h3>
               </motion.div>
