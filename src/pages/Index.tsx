@@ -68,7 +68,7 @@ const Index = () => {
 
         {/* Marquee */}
         <div className="relative border-t border-clay/15 py-6 overflow-hidden">
-          <div className="flex animate-marquee whitespace-nowrap gap-16 text-clay/40 font-display text-lg">
+          <div className="flex animate-marquee whitespace-nowrap gap-16 text-clay/70 font-display text-lg">
             {Array.from({ length: 2 }).map((_, i) => (
               <div key={i} className="flex shrink-0 gap-16">
                 <span>Nutrition</span><span>·</span>
@@ -121,7 +121,7 @@ const Index = () => {
             {home.missionCallout.stats.map((s) => (
               <div key={s.label} className="bg-clay p-6">
                 <div className="display text-3xl text-coral md:text-4xl">{s.value}</div>
-                <div className="mt-3 text-xs uppercase tracking-wider text-navy/60 leading-relaxed">{s.label}</div>
+                <div className="mt-3 text-xs uppercase tracking-wider text-navy/70 leading-relaxed">{s.label}</div>
               </div>
             ))}
           </div>
@@ -188,7 +188,7 @@ const Index = () => {
                     <p className="mt-2 text-sm text-navy/70">{s.desc}</p>
                   </div>
                   <div className="shrink-0 text-right">
-                    <div className="text-xs uppercase tracking-wider text-navy/50">Market</div>
+                    <div className="text-xs uppercase tracking-wider text-navy/70">Market</div>
                     <div className="display text-2xl text-coral">{s.market}</div>
                   </div>
                 </div>

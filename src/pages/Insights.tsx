@@ -35,7 +35,7 @@ const Insights = () => {
                     </h2>
                     <p className="mt-4 text-sm leading-relaxed text-navy/70">{i.excerpt}</p>
                   </div>
-                  <div className="mt-6 flex items-center justify-between border-t border-navy/10 pt-4 text-xs uppercase tracking-wider text-navy/55">
+                  <div className="mt-6 flex items-center justify-between border-t border-navy/10 pt-4 text-xs uppercase tracking-wider text-navy/70">
                     <span>{i.author} · {i.date}</span>
                     <ArrowRight className="h-4 w-4 text-coral transition-transform group-hover:translate-x-1" />
                   </div>

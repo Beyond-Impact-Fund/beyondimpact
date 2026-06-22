@@ -42,7 +42,7 @@ const Portfolio = () => {
                 {f}
               </button>
             ))}
-            <div className="ml-auto text-sm text-navy/60">
+            <div className="ml-auto text-sm text-navy/70">
               {filtered.length} {filtered.length === 1 ? "company" : "companies"}
             </div>
           </div>

@@ -77,7 +77,7 @@ const Advisory = () => {
               >
                 <div className="flex items-center justify-between">
                   <span className="display text-sm uppercase tracking-wider text-coral">{a.tag}</span>
-                  <span className="text-xs uppercase tracking-wider text-clay/50">{a.flow}</span>
+                  <span className="text-xs uppercase tracking-wider text-clay/70">{a.flow}</span>
                 </div>
                 <h3 className="display mt-6 text-2xl text-clay">{a.name}</h3>
                 <p className="mt-4 leading-relaxed text-clay/70">{a.body}</p>
