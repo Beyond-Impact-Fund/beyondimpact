@@ -12,6 +12,10 @@ const Index = () => {
         <img
           src={home.hero.image}
           alt=""
+          width={1920}
+          height={1080}
+          fetchPriority="high"
+          decoding="async"
           className="absolute inset-0 h-full w-full object-cover opacity-40"
         />
         <div className="absolute inset-0 bg-gradient-to-tr from-navy via-navy/85 to-navy/30" />
