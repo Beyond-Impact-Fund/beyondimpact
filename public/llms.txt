@@ -1,0 +1,29 @@
+# Beyond Impact
+
+> Beyond Impact Partners is an Article 9 (SFDR) impact investment firm financing companies that restore the ocean, decarbonize the bioeconomy, and accelerate the climate transition.
+
+Beyond Impact manages impact-focused funds and provides advisory services to founders, family offices, and institutional investors. The firm has been recognized by ImpactAssets IA 50 (2026), Ethical Finance Awards, and Environmental Finance Sustainable Investment Awards.
+
+## Pages
+
+- [Home](/): Overview of Beyond Impact's mission, funds, and portfolio.
+- [About](/about): Firm background, team, partners, and recognitions.
+- [Funds](/funds): Article 9 SFDR impact funds and investment strategy.
+- [Advisory](/advisory): Advisory services for founders and allocators.
+- [Portfolio](/portfolio): Portfolio companies across climate, food, and blue economy sectors.
+- [Blue Economy](/blue-economy): Investment thesis for ocean restoration and sustainable aquaculture.
+- [Insights](/insights): Articles and research on impact investing and the bioeconomy.
+
+## Insights
+
+- [Dialogues With Sagar & Shunji – Part 1](/insights/dialogues-sagar-shunji-part-1): Restoring the ocean while growing industry.
+- [Dialogues With Sagar & Shunji – Part 2](/insights/dialogues-sagar-shunji-part-2): Continued dialogue on regenerative ocean industry.
+- [The Great China Food Wall](/insights/great-china-food-wall): China's role in the future of food.
+- [The Great Reckoning](/insights/the-great-reckoning): Reflections on the impact investing landscape.
+- [Untapped Climate Opportunity](/insights/untapped-climate-opportunity): Overlooked climate investment categories.
+- [Role of AI in Alternative Proteins](/insights/role-of-ai-in-alternative-proteins): AI's impact on the alt-protein sector.
+- [Animal-Free for Biodiversity](/insights/animal-free-for-biodiversity): Biodiversity benefits of animal-free food systems.
+- [Biomaterials: Untapped Climate Opportunity](/insights/biomaterials-untapped-climate-opportunity): Biomaterials as a climate lever.
+- [The Nordic Edge](/insights/the-nordic-edge): Why the Nordics lead on sustainable innovation.
+- [Ingredients for a Sustainable Future](/insights/ingredients-for-a-sustainable-future): Next-generation sustainable ingredients.
+- [Beyond Energy: Consumption Transition](/insights/beyond-energy-consumption-transition): The consumption side of the energy transition.
