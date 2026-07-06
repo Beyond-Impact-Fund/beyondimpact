@@ -2,11 +2,19 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowUpRight, ArrowRight } from "lucide-react";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { home, site } from "@/content/site";
 
 const Index = () => {
   return (
     <Layout navVariant="dark">
+      <SEO
+        title="Beyond Impact — Food-Tech Fund, Alternative Protein & Bioeconomy Impact VC | Article 9 SFDR"
+        description="Beyond Impact is an Article 9 SFDR impact venture capital fund investing in alternative protein, food-tech, biodiversity-positive biosolutions, climate innovation, biomaterials and the bioeconomy — pioneer impact VC since 2017."
+        path="/"
+        keywords="food-tech fund, food fund, alternative protein investments, biodiversity impact fund, climate VC, bioeconomy fund, biosolutions, precision fermentation fund, cellular agriculture investor, blue economy fund, Article 9 SFDR fund, impact venture capital, vegan investing, biomaterials fund, Beyond Impact Partners, Claire Smith, Sagar Tandon"
+      />
+
       {/* HERO */}
       <section className="relative isolate min-h-screen overflow-hidden bg-navy text-clay">
         <img
