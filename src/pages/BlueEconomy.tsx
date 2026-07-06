@@ -2,11 +2,18 @@ import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import Layout from "@/components/Layout";
 import PageHero from "@/components/PageHero";
+import SEO from "@/components/SEO";
 import { blueEconomy, site } from "@/content/site";
 
 const BlueEconomy = () => {
   return (
     <Layout navVariant="dark">
+      <SEO
+        title="Blue Economy — Blue Frontier Fund | Beyond Impact × UMITO Partners"
+        description="Beyond Impact and UMITO Partners are building the Blue Frontier Fund — a cross-regional impact fund bridging Europe, Japan and Asia-Pacific across ocean innovation, blue food, marine biotech, alternative seafood and regenerative aquaculture."
+        path="/blue-economy"
+        keywords="blue economy fund, Blue Frontier Fund, UMITO Partners, ocean impact investing, blue food, marine biotechnology, sustainable aquaculture, cultivated seafood, seaweed innovation, microalgae fund, ocean climate fund"
+      />
       <PageHero
         eyebrow={blueEconomy.hero.eyebrow}
         title={
@@ -16,6 +23,8 @@ const BlueEconomy = () => {
         }
         sub={blueEconomy.hero.sub}
       />
+
+
 
       <section className="bg-clay py-20 md:py-28">
         <div className="container-x max-w-4xl">

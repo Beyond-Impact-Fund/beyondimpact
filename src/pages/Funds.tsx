@@ -3,11 +3,19 @@ import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
 import Layout from "@/components/Layout";
 import PageHero from "@/components/PageHero";
+import SEO from "@/components/SEO";
 import { funds, site } from "@/content/site";
 
 const Funds = () => {
   return (
     <Layout navVariant="dark">
+      <SEO
+        title="Funds — Article 9 SFDR Impact VC Platform | Alternative Protein, Bioeconomy & Climate | Beyond Impact"
+        description="Beyond Impact Ventures is an Article 9 SFDR impact fund platform investing seed to Series A in alternative protein, precision fermentation, cellular agriculture, biomaterials, life sciences and the bioeconomy. Luxembourg SICAV-RAIF umbrella."
+        path="/funds"
+        keywords="alternative protein fund, food-tech fund, bioeconomy fund, climate VC fund, biodiversity impact fund, Article 9 SFDR fund, Luxembourg SICAV-RAIF, precision fermentation fund, cellular agriculture fund, biomaterials fund, blue economy fund, Beyond Impact Ventures, Fund I, Fund II, co-investment"
+      />
+
       <PageHero
         eyebrow={funds.hero.eyebrow}
         title={<>An impact fund <span className="script text-coral">platform</span> — not a single fund.</>}

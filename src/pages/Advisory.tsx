@@ -2,11 +2,18 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Layout from "@/components/Layout";
 import PageHero from "@/components/PageHero";
+import SEO from "@/components/SEO";
 import { advisory } from "@/content/site";
 
 const Advisory = () => {
   return (
     <Layout navVariant="dark">
+      <SEO
+        title="Advisory — Impact Investing as a Service | Fund Design & Structuring | Beyond Impact"
+        description="Beyond Impact designs, structures and launches impact investment vehicles for corporates, philanthropists, family offices and international NGOs — alternative protein, climate, biodiversity, blue economy and bioeconomy strategies."
+        path="/advisory"
+        keywords="impact fund design, impact fund structuring, venture capital as a service, corporate impact investing, philanthropic impact vehicles, family office impact fund, NGO impact fund, Article 9 SFDR advisory, climate fund design, biodiversity fund advisory"
+      />
       <PageHero
         eyebrow={advisory.hero.eyebrow}
         title={
@@ -17,6 +24,8 @@ const Advisory = () => {
         sub={advisory.hero.sub}
         image={advisory.hero.image}
       />
+
+
 
       {/* THESIS / WHAT'S IN IT FOR YOU */}
       <section className="bg-clay py-24 md:py-32">

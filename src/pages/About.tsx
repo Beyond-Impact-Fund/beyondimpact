@@ -2,19 +2,41 @@ import { motion } from "framer-motion";
 import { Sprout, Globe2, HeartPulse } from "lucide-react";
 import Layout from "@/components/Layout";
 import PageHero from "@/components/PageHero";
+import SEO from "@/components/SEO";
 import { about } from "@/content/site";
 
 const pillarIcons = { Sprout, Globe2, HeartPulse } as const;
 
 const About = () => {
+  const teamJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    name: "About Beyond Impact",
+    url: "https://beyondimpact.lovable.app/about",
+    about: about.team.map((p) => ({
+      "@type": "Person",
+      name: p.name,
+      jobTitle: p.role,
+      description: p.bio,
+      worksFor: { "@type": "Organization", name: "Beyond Impact" },
+    })),
+  };
   return (
     <Layout navVariant="dark">
+      <SEO
+        title="About Beyond Impact — Pioneer Impact VC Team | Claire Smith, Sagar Tandon, Tarja Zudemberg"
+        description="Meet the Beyond Impact team — Claire Smith, Sagar Tandon, Tarja Zudemberg, Anthony Stam, Hanna Y. Gabay and Jody Rasch. Pioneer Article 9 SFDR impact venture capital firm backing alternative protein, biodiversity, climate, blue economy and the bioeconomy."
+        path="/about"
+        keywords="Claire Smith Beyond Impact, Sagar Tandon Beyond Impact, Tarja Zudemberg, Anthony Stam, Hanna Y. Gabay, Jody Rasch, impact VC team, bioeconomy fund managers, alternative protein investors, climate VC, biodiversity fund, Article 9 SFDR team"
+        jsonLd={teamJsonLd}
+      />
       <PageHero
         eyebrow={about.hero.eyebrow}
         title={<>Pioneer impact <span className="script text-coral">VC</span>, built on conviction.</>}
         sub={about.hero.sub}
         image={about.hero.image}
       />
+
 
       {/* VALUES */}
       <section className="bg-clay py-24 md:py-32">
@@ -110,8 +132,9 @@ const About = () => {
                 <div className="min-w-0 flex-1">
                   <div className="flex items-baseline gap-3">
                     <h3 className="display text-xl text-clay md:text-2xl">{p.name}</h3>
-                    <span className="text-sm">{p.flags}</span>
+                    {p.flags && <span className="text-sm">{p.flags}</span>}
                   </div>
+
                   <div className="mt-1 text-sm font-medium uppercase tracking-wider text-coral">{p.role}</div>
                   <p className="mt-3 text-sm leading-relaxed text-clay/75">{p.bio}</p>
                 </div>
