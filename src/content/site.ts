@@ -78,7 +78,7 @@ export const home = {
   },
   stats: [
     { value: "$191M", label: "AUM across two VC funds, co-investments and a public fund" },
-    { value: "2.3×", label: "Fund I TVPI (Jan ’24)" },
+    { value: "23+", label: "Portfolio companies across Fund I & Fund II" },
     { value: "$1B+", label: "Raised by portfolio post-investment" },
     { value: "100+", label: "Years of combined team investing experience" },
   ],
