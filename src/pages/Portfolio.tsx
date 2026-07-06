@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Layout from "@/components/Layout";
 import PageHero from "@/components/PageHero";
+import SEO from "@/components/SEO";
 import { portfolio } from "@/content/site";
 
 const Portfolio = () => {
@@ -17,13 +18,38 @@ const Portfolio = () => {
     [filter]
   );
 
+  const portfolioJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Beyond Impact Portfolio",
+    itemListElement: portfolio.companies.map((c, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      item: {
+        "@type": "Organization",
+        name: c.name,
+        description: c.desc,
+        areaServed: c.region,
+      },
+    })),
+  };
+
   return (
     <Layout navVariant="dark">
+      <SEO
+        title="Portfolio — Alternative Protein, Bioeconomy & Climate Companies | Beyond Impact"
+        description="Beyond Impact portfolio: alternative protein, cultivated meat, precision fermentation, biomaterials, cellular agriculture and blue economy companies including Mosa Meat, BlueNalu, EVERY, Geltor, Gourmey, SuperMeat, Umami Bioworks, Perfat, Tissen BioFarm and more."
+        path="/portfolio"
+        keywords="Mosa Meat investor, BlueNalu investor, EVERY Company, Geltor, Gourmey, SuperMeat, Umami Bioworks, Emulate, PLHYDE, Renewal Mill, Yeastup, Perfat, Tissen BioFarm, Ingrediome, Paleo, Algama, Jay & Joy, SwissDeCode, Plant Veda, alternative protein portfolio, precision fermentation companies, cultivated meat companies, biomaterials companies"
+        jsonLd={portfolioJsonLd}
+      />
       <PageHero
         eyebrow={portfolio.hero.eyebrow}
         title={<>A working <span className="script text-coral">directory</span> of the transition economy.</>}
         sub={portfolio.hero.sub}
       />
+
+
 
       <section className="bg-clay py-20 md:py-28">
         <div className="container-x">
