@@ -132,8 +132,9 @@ const About = () => {
                 <div className="min-w-0 flex-1">
                   <div className="flex items-baseline gap-3">
                     <h3 className="display text-xl text-clay md:text-2xl">{p.name}</h3>
-                    <span className="text-sm">{p.flags}</span>
+                    {p.flags && <span className="text-sm">{p.flags}</span>}
                   </div>
+
                   <div className="mt-1 text-sm font-medium uppercase tracking-wider text-coral">{p.role}</div>
                   <p className="mt-3 text-sm leading-relaxed text-clay/75">{p.bio}</p>
                 </div>
