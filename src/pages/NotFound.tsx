@@ -1,23 +1,28 @@
 import { useEffect } from "react";
-import { Navigate, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+
+const TARGET = "https://beyondimpact.vc/about";
 
 const NotFound = () => {
   const location = useLocation();
 
   useEffect(() => {
-    console.warn("404 redirect → /about for path:", location.pathname);
+    console.warn("404 redirect → beyondimpact.vc/about for path:", location.pathname);
+    window.location.replace(TARGET);
   }, [location.pathname]);
 
   return (
     <>
       <Helmet>
-        <title>About Beyond Impact — Article 9 SFDR Impact VC</title>
+        <title>Beyond Impact — About</title>
         <meta name="robots" content="noindex, follow" />
-        <link rel="canonical" href="https://beyondimpact.vc/about" />
-        <meta httpEquiv="refresh" content="0; url=/about" />
+        <link rel="canonical" href={TARGET} />
+        <meta httpEquiv="refresh" content={`0; url=${TARGET}`} />
       </Helmet>
-      <Navigate to="/about" replace />
+      <div style={{ padding: 40, fontFamily: "system-ui" }}>
+        Redirecting to <a href={TARGET}>beyondimpact.vc/about</a>…
+      </div>
     </>
   );
 };
