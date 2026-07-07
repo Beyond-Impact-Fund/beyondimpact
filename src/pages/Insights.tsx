@@ -46,7 +46,7 @@ const Insights = () => {
     itemListElement: sorted.map((i, idx) => ({
       "@type": "ListItem",
       position: idx + 1,
-      url: `https://beyondimpact.lovable.app/insights/${i.slug}`,
+      url: `https://beyondimpact.vc/insights/${i.slug}`,
       name: i.title,
     })),
   };

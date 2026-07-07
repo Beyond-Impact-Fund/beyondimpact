@@ -86,4 +86,4 @@ Allow: /
 User-agent: cohere-ai
 Allow: /
 
-Sitemap: https://beyondimpact.lovable.app/sitemap.xml
+Sitemap: https://beyondimpact.vc/sitemap.xml

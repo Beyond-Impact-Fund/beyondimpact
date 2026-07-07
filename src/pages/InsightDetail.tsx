@@ -28,7 +28,7 @@ const InsightDetail = () => {
     .slice(0, 3);
 
   const path = `/insights/${insight.slug}`;
-  const url = `https://beyondimpact.lovable.app${path}`;
+  const url = `https://beyondimpact.vc${path}`;
 
   const articleJsonLd = {
     "@context": "https://schema.org",
@@ -53,7 +53,7 @@ const InsightDetail = () => {
       name: "Beyond Impact",
       logo: {
         "@type": "ImageObject",
-        url: "https://beyondimpact.lovable.app/favicon.ico",
+        url: "https://beyondimpact.vc/favicon.ico",
       },
     },
     url,
@@ -63,8 +63,8 @@ const InsightDetail = () => {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://beyondimpact.lovable.app/" },
-      { "@type": "ListItem", position: 2, name: "Insights", item: "https://beyondimpact.lovable.app/insights" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://beyondimpact.vc/" },
+      { "@type": "ListItem", position: 2, name: "Insights", item: "https://beyondimpact.vc/insights" },
       { "@type": "ListItem", position: 3, name: insight.title, item: url },
     ],
   };

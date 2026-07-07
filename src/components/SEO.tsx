@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 
-const SITE_URL = "https://beyondimpact.lovable.app";
+const SITE_URL = "https://beyondimpact.vc";
 const DEFAULT_OG =
   "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/85b40e5d-9bd9-423c-afe6-81318b52f9dd/id-preview-6f3d0838--4e503f58-c52e-4214-af56-91afbbc806af.lovable.app-1777898213356.png";
 
