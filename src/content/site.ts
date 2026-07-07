@@ -99,7 +99,7 @@ export const about = {
   hero: {
     eyebrow: "About — Impact VC, Climate VC, Bioeconomy Investor",
     title: "Pioneer impact VC, built on conviction.",
-    sub: "Founded by Claire Smith in 2017, Beyond Impact is an Article 9 (SFDR) impact venture capital platform — a pioneer impact VC, climate investor and bioeconomy investor backing vegan, biodiversity-positive biosolutions and alternative protein across global developed markets.",
+    sub: "Founded by Claire Smith in 2017, Beyond Impact is an Article 9 (SFDR) impact venture capital platform — a pioneer impact VC, climate investor and bioeconomy investor backing plant-based, biodiversity-positive biosolutions and alternative protein across global developed markets.",
     image: heroLab,
   },
   values: [
@@ -351,7 +351,7 @@ export const portfolio = {
   companies: [
     // Fund I & II shared
     { name: "Algama", sector: "Nutrition", funds: ["Fund I", "Fund II"], region: "EU", desc: "French company harvesting algae to create sustainable, egg-reducing ingredients for industrial bakeries." },
-    { name: "Geltor", sector: "Ingredients", funds: ["Fund I", "Fund II"], region: "US", desc: "US-based manufacturer of biodesigned, 100% vegan collagen and proteins for skincare and food." },
+    { name: "Geltor", sector: "Ingredients", funds: ["Fund I", "Fund II"], region: "US", desc: "US-based manufacturer of biodesigned, animal-free collagen and proteins for skincare and food." },
     { name: "Gourmey", sector: "Nutrition", funds: ["Fund I", "Fund II"], region: "EU", desc: "French pioneering cultivated meat company; first in the EU to receive regulatory approval (Singapore) for cultivated chicken / foie gras." },
     { name: "Jay & Joy", sector: "Nutrition", funds: ["Fund I", "Fund II"], region: "EU", desc: "French producer of organic, plant-based fermented cheeses with nationwide retail presence." },
     { name: "Renewal Mill", sector: "Ingredients", funds: ["Fund I", "Fund II"], region: "US", desc: "Award-winning US company upcycling food manufacturing by-products into high-quality flours and baking mixes." },
@@ -363,7 +363,7 @@ export const portfolio = {
     { name: "PLHYDE", sector: "Materials", funds: ["Fund I"], region: "US", desc: "The Plant Leather Company — transforming fruit and vegetable waste into plastic-free, luxury regenerative leather." },
     { name: "Plant Veda", sector: "Nutrition", funds: ["Fund I"], region: "NA", desc: "Canadian company producing probiotic, plant-based dairy products inspired by traditional Indian recipes." },
     { name: "SuperMeat", sector: "Nutrition", funds: ["Fund I"], region: "Israel", desc: "Israeli startup developing technology to produce nature-identical meat from chicken cells at competitive price." },
-    { name: "SwissDeCode", sector: "Health", funds: ["Fund I"], region: "EU", desc: "Swiss firm providing on-site DNA testing solutions to ensure food safety and vegan compliance." },
+    { name: "SwissDeCode", sector: "Health", funds: ["Fund I"], region: "EU", desc: "Swiss firm providing on-site DNA testing solutions to ensure food safety and plant-based compliance." },
     { name: "Umami Bioworks", sector: "Nutrition", funds: ["Fund I"], region: "APAC", desc: "Singapore-based B2B technology provider using AI to cultivate high-demand marine species and ingredients." },
     // Fund II only
     { name: "Ingrediome", sector: "Ingredients", funds: ["Fund II"], region: "US/Israel", desc: "US/Israel firm using cyanobacterial precision fermentation to produce bio-identical meat proteins from CO₂." },

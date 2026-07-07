@@ -12,7 +12,7 @@ const Index = () => {
         title="Beyond Impact — Food-Tech Fund, Alternative Protein & Bioeconomy Impact VC | Article 9 SFDR"
         description="Beyond Impact is an Article 9 SFDR impact venture capital fund investing in alternative protein, food-tech, biodiversity-positive biosolutions, climate innovation, biomaterials and the bioeconomy — pioneer impact VC since 2017."
         path="/"
-        keywords="food-tech fund, food fund, alternative protein investments, biodiversity impact fund, climate VC, bioeconomy fund, biosolutions, precision fermentation fund, cellular agriculture investor, blue economy fund, Article 9 SFDR fund, impact venture capital, vegan investing, biomaterials fund, Beyond Impact Partners, Claire Smith, Sagar Tandon"
+        keywords="food-tech fund, food fund, alternative protein investments, biodiversity impact fund, climate VC, bioeconomy fund, biosolutions, precision fermentation fund, cellular agriculture investor, blue economy fund, Article 9 SFDR fund, impact venture capital, plant-based investing, biomaterials fund, Beyond Impact Partners, Claire Smith, Sagar Tandon"
       />
 
       {/* HERO */}
