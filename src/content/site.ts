@@ -363,7 +363,7 @@ export const portfolio = {
     { name: "PLHYDE", sector: "Materials", funds: ["Fund I"], region: "US", desc: "The Plant Leather Company — transforming fruit and vegetable waste into plastic-free, luxury regenerative leather." },
     { name: "Plant Veda", sector: "Nutrition", funds: ["Fund I"], region: "NA", desc: "Canadian company producing probiotic, plant-based dairy products inspired by traditional Indian recipes." },
     { name: "SuperMeat", sector: "Nutrition", funds: ["Fund I"], region: "Israel", desc: "Israeli startup developing technology to produce nature-identical meat from chicken cells at competitive price." },
-    { name: "SwissDeCode", sector: "Health", funds: ["Fund I"], region: "EU", desc: "Swiss firm providing on-site DNA testing solutions to ensure food safety and vegan compliance." },
+    { name: "SwissDeCode", sector: "Health", funds: ["Fund I"], region: "EU", desc: "Swiss firm providing on-site DNA testing solutions to ensure food safety and plant-based compliance." },
     { name: "Umami Bioworks", sector: "Nutrition", funds: ["Fund I"], region: "APAC", desc: "Singapore-based B2B technology provider using AI to cultivate high-demand marine species and ingredients." },
     // Fund II only
     { name: "Ingrediome", sector: "Ingredients", funds: ["Fund II"], region: "US/Israel", desc: "US/Israel firm using cyanobacterial precision fermentation to produce bio-identical meat proteins from CO₂." },
