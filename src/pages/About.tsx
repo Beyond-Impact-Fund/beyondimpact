@@ -12,7 +12,7 @@ const About = () => {
     "@context": "https://schema.org",
     "@type": "AboutPage",
     name: "About Beyond Impact",
-    url: "https://beyondimpact.lovable.app/about",
+    url: "https://beyondimpact.vc/about",
     about: about.team.map((p) => ({
       "@type": "Person",
       name: p.name,
