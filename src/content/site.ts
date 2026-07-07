@@ -99,7 +99,7 @@ export const about = {
   hero: {
     eyebrow: "About — Impact VC, Climate VC, Bioeconomy Investor",
     title: "Pioneer impact VC, built on conviction.",
-    sub: "Founded by Claire Smith in 2017, Beyond Impact is an Article 9 (SFDR) impact venture capital platform — a pioneer impact VC, climate investor and bioeconomy investor backing vegan, biodiversity-positive biosolutions and alternative protein across global developed markets.",
+    sub: "Founded by Claire Smith in 2017, Beyond Impact is an Article 9 (SFDR) impact venture capital platform — a pioneer impact VC, climate investor and bioeconomy investor backing plant-based, biodiversity-positive biosolutions and alternative protein across global developed markets.",
     image: heroLab,
   },
   values: [
