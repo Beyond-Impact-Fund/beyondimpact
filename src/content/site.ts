@@ -351,7 +351,7 @@ export const portfolio = {
   companies: [
     // Fund I & II shared
     { name: "Algama", sector: "Nutrition", funds: ["Fund I", "Fund II"], region: "EU", desc: "French company harvesting algae to create sustainable, egg-reducing ingredients for industrial bakeries." },
-    { name: "Geltor", sector: "Ingredients", funds: ["Fund I", "Fund II"], region: "US", desc: "US-based manufacturer of biodesigned, 100% vegan collagen and proteins for skincare and food." },
+    { name: "Geltor", sector: "Ingredients", funds: ["Fund I", "Fund II"], region: "US", desc: "US-based manufacturer of biodesigned, animal-free collagen and proteins for skincare and food." },
     { name: "Gourmey", sector: "Nutrition", funds: ["Fund I", "Fund II"], region: "EU", desc: "French pioneering cultivated meat company; first in the EU to receive regulatory approval (Singapore) for cultivated chicken / foie gras." },
     { name: "Jay & Joy", sector: "Nutrition", funds: ["Fund I", "Fund II"], region: "EU", desc: "French producer of organic, plant-based fermented cheeses with nationwide retail presence." },
     { name: "Renewal Mill", sector: "Ingredients", funds: ["Fund I", "Fund II"], region: "US", desc: "Award-winning US company upcycling food manufacturing by-products into high-quality flours and baking mixes." },
