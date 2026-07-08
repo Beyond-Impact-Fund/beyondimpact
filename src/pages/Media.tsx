@@ -184,6 +184,7 @@ const Media = () => {
               {
                 name: "Beyond Cruelty Foundation",
                 body: "Campaigns for zero animal exploitation and funds safe havens for animals.",
+                href: "https://beyondcruelty.org/",
               },
             ].map((c) => (
               <div key={c.name} className="rounded-2xl border border-navy/10 bg-white p-7 shadow-soft">
