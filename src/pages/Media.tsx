@@ -51,9 +51,15 @@ const coverage: Row[] = [
 const awards: Row[] = [
   { date: "2026", title: "Selected for the ImpactAssets 50® (IA 50) 2026 — Emerging Impact Manager, 15th anniversary edition", source: "ImpactAssets" },
   { date: "2026", title: "CEO Claire Smith nominated for Women in Investment Awards 2026", source: "Investment Week" },
+  { date: "2024", title: "Best Impact-Focused Fund Management Firm — Beyond Impact", source: "Wealth & Finance — Ethical Finance Awards" },
   { date: "2023", title: "Environmental Fund of the Year — Global (Beyond Impact)", source: "Environmental Finance Sustainable Investment Awards" },
+  { date: "2023", title: "Best Investment Company", source: "Wealth & Finance — Ethical Finance Awards" },
   { date: "2022", title: "Investment Leader of the Year — Claire Smith, CEO & Founder", source: "Environmental Finance Sustainable Investment Awards" },
+  { date: "Certified", title: "Best ESG Fund — Climate Focused", source: "ESG AAA Rating — European Awards (Private Equity Wire)" },
+  { date: "Certified", title: "Best ESG Fund", source: "ESG AAA Rating" },
+  { date: "Classified", title: "Article 9 (SFDR) Impact Fund Platform", source: "SFDR Classification" },
 ];
+
 
 const partnerships = [
   { title: "Blue Frontier Fund", body: "$75M blue economy fund with UMITO Partners (Tokyo), targeting early-stage deep-tech across Europe & APAC." },
@@ -178,6 +184,7 @@ const Media = () => {
               {
                 name: "Beyond Cruelty Foundation",
                 body: "Campaigns for zero animal exploitation and funds safe havens for animals.",
+                href: "https://beyondcruelty.org/",
               },
             ].map((c) => (
               <div key={c.name} className="rounded-2xl border border-navy/10 bg-white p-7 shadow-soft">
