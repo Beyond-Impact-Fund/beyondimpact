@@ -133,12 +133,28 @@ const InsightDetail = () => {
                     </blockquote>
                   );
                 }
+                if (block.type === "img") {
+                  return (
+                    <figure key={i} className="my-8">
+                      <img
+                        src={block.src}
+                        alt={block.alt}
+                        loading="lazy"
+                        className="w-full rounded-xl border border-navy/10"
+                      />
+                      {block.caption && (
+                        <figcaption className="mt-2 text-center text-xs text-navy/60">{block.caption}</figcaption>
+                      )}
+                    </figure>
+                  );
+                }
                 return (
                   <p key={i} className="text-[1.05rem] leading-relaxed text-navy/80">
                     {block.text}
                   </p>
                 );
               })}
+
             </div>
 
             {/* Related insights — internal links for SEO */}
