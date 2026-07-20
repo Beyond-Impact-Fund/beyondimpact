@@ -14,7 +14,9 @@ export interface Insight {
     | { type: "h2"; text: string }
     | { type: "ul"; items: string[] }
     | { type: "quote"; text: string; cite?: string }
+    | { type: "img"; src: string; alt: string; caption?: string }
   >;
+
 }
 
 export const insights: Insight[] = [
@@ -344,6 +346,150 @@ export const insights: Insight[] = [
       { type: "p", text: "Read the full original interview (text by Eri Ishida) on UMITO Partners: https://umitopartners.com/en/stories/restoring-the-ocean-while-growing-industry-part-2/" },
     ],
   },
+  {
+    slug: "alternative-protein-comeback",
+    title: "Alternative Protein Comeback?",
+    author: "Sagar Tandon",
+    date: "July 20, 2026",
+    category: "Alternative Proteins",
+    excerpt:
+      "Encouraging patterns emerging — after 30 brutal months, sovereign strategies from Japan, Ireland, the Netherlands, Germany, the EU and China are pulling alternative proteins back to the centre of the bioeconomy transition.",
+    body: [
+      { type: "p", text: "The last 30 months or so have been brutal for the alternative protein and food-tech industry. Despite overall growing trends towards a shift that is kinder to the planet, there has been paranoia among capital owners (more than capital allocators) about the space, heated valuations, and redirection of all venture capital to artificial intelligence." },
+      { type: "p", text: "Claire and I believed that alternative proteins, no matter what, would need to make a comeback if we were serious about the transition. It is not possible to decarbonize or reduce the past, present, and future footprints of human impact on the planet without changing the way we produce not only food but also materials, personal care products, and pharmaceuticals. We need to change and challenge the way we produce everything, and it is not just a consumer-sentiment issue; by and large, consumers are conscious of their actions." },
+      { type: "p", text: "But for this we need commitment from private capital owners, states, and sovereign wealth funds to have a long view — at least 10-30 years — grounded in resilience, food security, and tackling changing climate conditions, which hurts how much calories and proteins we can produce. We need to find the most sustainable ways to produce, but the way of production also needs to be rooted in biology and nature. I say biology because many food activists and environmentalists conflate biotech with something unnatural; it is not." },
+      { type: "quote", text: "It is biological time risk. This is the risk that a productive biological system has already entered a phase of decline, but the financial system has not yet noticed because the final commercial shortage has not yet appeared on the procurement desk. … Capital can buy many things. It cannot compress biological time.", cite: "The Biological Asset Trillionaire" },
+      { type: "p", text: "Everything we eat today, in some ways, has been designed by humans to meet human caloric and nutritional needs. Our generation thinks we are the only ones tinkering with nature to grow food and produce materials. That is factually and objectively untrue; all our past civilizations, our ancestors, worked hard to find ways to make crops more resilient, increase yields, and make our bananas seedless. Our ancestors were the original bioengineers. They practiced selective breeding to transform wild grasses into staple crops like wheat and corn. They even engineered convenience into nature itself, creating the seedless bananas and watermelons we take for granted." },
+      { type: "p", text: "Now we are moving from field to cells and breeding to brewing. This shift towards a food system built on precision fermentation, cellular cultivation, and molecular farming is not a rejection of our agricultural past, but an evolution — a revolution compelled by necessity and enabled by unprecedented understanding." },
+      { type: "p", text: "There is so much fear in the air surrounding terms like \"GMO\" and \"lab-grown food.\" This fear is understandable but ultimately misplaced. We must reframe the conversation: virtually everything we eat today is the product of genetic modification, achieved through centuries of selective breeding. The question is not if we should modify our food, but how we do it. We should actively promote the next generation of ethical genetic engineering — techniques that are more precise, controlled, and transparent than the blunt instrument of historical breeding." },
+      { type: "p", text: "We are not creating artificial life; we are harnessing the innate power of yeast, microbes, and animal cells — the same biological forces that have always existed — and providing them with a clean, controlled environment. This represents the ultimate humane food, eliminating industrial animal agriculture and moving from factory farms to food factories. It is a deeply decarbonizing and regenerative path, one that could allow us to rewild billions of acres of farmland, transforming food production from the planet's most significant source of greenhouse gas emissions into a tool for its regeneration." },
+      { type: "p", text: "We are seeing, from China to Japan to the EU (Germany, Ireland), thoughtful contemplation on the alternative protein strategy, wrapped up with focus areas like food security, resilience, and bioeconomy." },
+
+      { type: "h2", text: "Japan" },
+      { type: "p", text: "Japan has unveiled a draft roadmap to invest about $60 billion USD in food technology by 2040 as part of a broader strategy to strengthen its economy and food security, with ¥1T ($6.2B) allocated to new foods. The plan focuses on four key areas: indoor farming, land-based aquaculture, food machinery, and new foods, with indoor farming receiving the largest share of funding. Overall, the government aims to drive more than ¥370 trillion in combined public and private investment across 17 strategic industries by 2040." },
+      { type: "p", text: "Further reading: Green Queen — https://www.greenqueen.com.hk/japan-growth-strategy-public-private-investment-roadmap-new-foods/" },
+
+      { type: "h2", text: "Ireland" },
+      { type: "p", text: "Ireland takes over the Presidency of the Council of the EU, with a commitment to reinforcing EU resilience in emerging sectors such as biotechnology. Over the next six months, Ireland will guide the Council's work and legislative priorities — including discussions around the first EU Biotech Act and the next EU Framework Program for Research and Innovation (FP10). According to GFI's latest analysis, the country has ranked among Europe's top 10 nations in alternative protein research every year since 2020." },
+
+      { type: "h2", text: "Netherlands" },
+      { type: "p", text: "The Netherlands is cementing its position as a global leader in foodtech by heavily investing in open-access scale-up facilities and public research. This strategy aims to shift the retail market away from traditional animal proteins toward plant-based alternatives and cellular agriculture. The country remains the only EU nation to have authorized public tastings of cultivated meat and actively opposes proposed EU-wide bans on lab-grown proteins." },
+      { type: "img", src: "https://substackcdn.com/image/fetch/$s_!vf_g!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8bd720bc-b0ae-4728-b3f1-35bbd2063301_816x507.png", alt: "Netherlands foodtech scale-up infrastructure supporting plant-based and cellular agriculture" },
+
+      { type: "h2", text: "Germany" },
+      { type: "p", text: "The German government sets a new ambition for low-emission alternative proteins produced through food biotech: to establish a business-driven innovation ecosystem and to launch products made in Germany on the world market by 2028. Germany has one of Europe's strongest research bases in alternative proteins. Read the full Germany Biotechnology Roadmap: https://hightech-agenda-deutschland.de/roadmaps/biotechnologie/" },
+
+      { type: "h2", text: "EU-wide" },
+      { type: "p", text: "The European Commission has published its long-awaited EU Protein Plan. The plan acknowledges the importance of plant proteins for Europe's future food security, resilience, autonomy, competitiveness, public health, and climate goals. For more, see the European Vegetarian Union cover: https://www.euroveg.eu/eu-protein-plan/" },
+      { type: "p", text: "On 10 June 2026, the Commission launched three new initiatives to support the marketability of bio-based products:" },
+      { type: "ul", items: [
+        "the Bio-based Europe Alliance (BEA) to support market scale-up,",
+        "the Bioeconomy Investment Deployment Group (BIDG) to improve access to finance,",
+        "and the Expert Group on Bioeconomy to support implementation by Member States.",
+      ]},
+      { type: "p", text: "Europe must step up its commitment to the bioeconomy, and we at Beyond Impact VC are committed to the bioeconomy, as we believe the transition to bio solutions would lead to a kinder, cleaner, healthier world — not just for humans but also for nature at large." },
+      { type: "img", src: "https://substackcdn.com/image/fetch/$s_!wars!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe94b4116-e12f-4872-94f7-651ddd55570c_1280x643.jpeg", alt: "Beyond Impact and European bioeconomy investment collaboration" },
+      { type: "p", text: "We are proud backers of several bio solutions. Claire Smith, my colleague and founder of Beyond Impact VC, represented us at the first meeting of the Bioeconomy Investment Development Group, to which we were handpicked. Learn more from the Circular Bio-based Europe Joint Undertaking: https://www.cbe.europa.eu/news/mobilising-finance-scale-europes-bio-based-sector" },
+
+      { type: "h2", text: "China" },
+      { type: "p", text: "Other regional protein strategies, with China leading, maximize production across all protein pathways. They reinforce innovation in fermentation to supply protein across the full agri-food chain, including healthier and more sustainable food for citizens. There is strong recognition that only through strength across diversity can food security be achieved. China is pursuing an 'all-of-the-above' protein strategy, investing heavily in fermentation, recognizing that food security means sovereignty over biological manufacturing." },
+      { type: "img", src: "https://substackcdn.com/image/fetch/$s_!GHpI!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F69ed97f8-cec1-4af9-9bb8-7f8f822d66b5_549x386.png", alt: "China alternative protein strategy chart", caption: "Courtesy: Systemiq / Gordon and Betty Moore Foundation" },
+
+      { type: "p", text: "According to analyses by institutions such as the Stockholm Resilience Center and Nature, the system is buckling under its own weight. Food production alone exceeds planetary boundaries; globalizing the Western diet would require three to five Earths." },
+      { type: "p", text: "The journey from engineering seedless bananas to brewing proteins is a continuous arc of human innovation. The objective facts paint a clear picture: the old system is unsustainable and on the verge of collapse. The new narrative is one of hope, built on a better understanding of life's building blocks — a story of building a food system that is not only kinder and cleaner but also in true harmony with the natural world it depends on." },
+      { type: "img", src: "https://substackcdn.com/image/fetch/$s_!cU72!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff6f9f27c-9252-4ca9-97f8-64c22890324b_1280x800.png", alt: "From seedless bananas to brewing proteins — the arc of human bioengineering", caption: "Picture credits: WePlanet — Seedless Bananas to Brewing Proteins & More by Sagar Tandon" },
+
+      { type: "p", text: "The bioeconomy transition is reaching almost every sector and industry. But a critical issue is that extractive industries — such as petrochemicals, animal agriculture, and forestry — are built on a long history of government protection and subsidies. Many have become monopolies that disregard environmental costs, thereby keeping the prices of products such as chemical fertilizers, animal-sourced proteins, and materials artificially low. This means that a 1-to-1 comparison makes bio-based solutions seem outrageously expensive." },
+      { type: "p", text: "Systemic change generates significant economic returns, but it takes patience. When short-term capital retreats, long-term sovereign and patient capital must step forward; we believe this is exactly the right time to support the sector and accelerate the transition to a kinder, cleaner, and healthier world." },
+      { type: "p", text: "Our conviction at Beyond Impact is further strengthened by structural shifts across Europe, especially Northern Europe, particularly in the Nordics and the Netherlands. Helsinki's landmark plan to halve meat and dairy procurement by 2030 is one example of the growing political commitment to decouple public procurement from high-emission animal agriculture." },
+      { type: "p", text: "In Service of Humanity, Sagar Tandon, Partner, Beyond Impact." },
+    ],
+  },
+  {
+    slug: "help-the-oceans-breathe-again",
+    title: "Help the Oceans Breathe Again",
+    author: "Sagar Tandon",
+    date: "July 20, 2026",
+    category: "Blue Economy",
+    excerpt:
+      "There is no green transition without a proper blue transition — a personal reckoning with water, and why Beyond Impact is investing in disruptive deep tech that restores rather than extracts from our oceans.",
+    body: [
+      { type: "p", text: "I grew up in a landlocked area, in a very small place somewhere in northern India. There was one river — just one — and it died. I don't fully know why. I imagine climate change played a significant role, or perhaps it was a combination of neglect, abstraction, and the slow violence of development that doesn't account for living things. Whatever the reason, its disappearance deprived the region's subsistence fisherfolk of their primary food source. They didn't just lose a river; they lost their livelihoods, their identity, their connection to something larger than themselves." },
+      { type: "p", text: "I didn't have a romantic relationship with the ocean or water while growing up. It wasn't a common part of life; the geography of my birth dictated that distance. Water was practical — something to drink, something to wash with, something that could also disappear without warning. But as I grew older and moved to different places — especially in archipelagic countries — my relationship with water and with nature in general completely transformed." },
+      { type: "p", text: "Now, I find it difficult to live in a landlocked area without access to water. I love observing water — the rhythm of waves, the way light plays on its surface, the endless conversation between tide and shore. It gives me a sense of calmness and serenity that I cannot explain, only feel. Each shore tells a different story, but they all share the same language: patience, persistence, and power." },
+      { type: "img", src: "https://substackcdn.com/image/fetch/$s_!zJdL!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F547c9657-c313-468e-9800-8c1e02a74ed0_1024x723.jpeg", alt: "Coral reef fish", caption: "\"Coral Reef fish\" by designatednaphour, licensed under CC BY 2.0" },
+      { type: "quote", text: "The view of a shoreline is nature's way of reminding us where one world ends and another begins." },
+      { type: "p", text: "It is also, I have come to believe, a mirror — reflecting back to us how we treat the planet that sustains us." },
+
+      { type: "h2", text: "The Blue Transition is Non-Negotiable" },
+      { type: "p", text: "There is no green transition without a proper blue transition. That means rethinking how we look at our oceans, rivers, streams, lakes, and other water bodies. It is critical to remember that they are not bottomless pits or trash cans. They are not infinite pools of natural resources that we can keep extracting to feed ourselves, heal ourselves (through marine ingredients used in pharmaceuticals and healthcare), or pump petroleum from. There must be a limit — or at least some level of sensitivity." },
+      { type: "p", text: "Our oceans are dying. Whether you look at collapsing fish stocks, declining aquatic biodiversity, floating plastic islands, embedded microplastics in every water body, or dying coral reefs, the impact is undeniable. The crisis is far deeper than simply transitioning from petroleum-based fuels to net-zero battery packs. We don't hear enough about this, but we need a new transition economy — one that helps us move toward a kinder, cleaner, and healthier world rooted in SDG 12: Responsible Consumption and Production. In particular, we need a production transition: a fundamental rethink of how we produce everything — not just energy, but our food, materials, personal care products, and pharmaceuticals." },
+      { type: "quote", text: "This is not an environmental issue. This is a civilization issue. How we treat our oceans is how we treat our future." },
+
+      { type: "h2", text: "The Protein Diversification Imperative" },
+      { type: "p", text: "When it comes to blue foods, we rely heavily on seafood for proteins and aqua-nutrients. But we need to understand that we are not just exploiting aquatic life through overconsumption; we are also damaging entire local ecosystems. We desperately need protein diversification — especially when it comes to seafood. As a corollary, we need to think beyond traditional aqua-nutrients extracted from fish and explore cell culturing, microalgal fractionation, biorefining, seaweed, and other cutting-edge approaches." },
+      { type: "img", src: "https://substackcdn.com/image/fetch/$s_!MCi5!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F217f7efe-ecd4-4423-8c7c-00635741bd25_4640x3093.jpeg", alt: "Seaweed farming in Nusa Lembongan, Bali", caption: "\"Seaweed farming — Nusa Lembongan, Bali\" by Jean-Marie Hullot, licensed under CC BY-SA 2.0" },
+      { type: "p", text: "For a second, even if we set aside the ethical and moral debate over whether fish are sentient, we must acknowledge the factual reality: overfishing has severely depleted fish stocks. According to the UN's Food and Agriculture Organization (FAO), more than one-third of assessed fish stocks are currently overfished. Overfishing doesn't just reduce the number of fish; it alters their biology, changes their growth rates, and disrupts overall aquatic biodiversity. We are playing with nature at a scale we don't fully comprehend, wrapped in our own cognitive dissonance." },
+      { type: "quote", text: "We know the oceans are dying, yet we continue to extract from them. We know microplastics are in our blood, yet we continue to produce. This cognitive dissonance is not a failure of information — it is a failure of imagination. Our job at Beyond Impact is to imagine — and fund — a different way." },
+
+      { type: "h2", text: "Beyond Mitigation, Toward Additionality" },
+      { type: "p", text: "We need to think about new blue foods — not just those that are sustainable on paper, but those that push the boundaries of how we see food and produce it. We need to examine the entire supply chain. As my friend and partner Shunji Murakami says, we must rethink beyond mitigation strategies and look for innovative solutions that deliver additionality — real, measurable, systemic impact that goes beyond simply reducing harm." },
+      { type: "p", text: "This personal reckoning with water didn't just change how I feel — it changed how I invest. And that is precisely the lens through which we view our work at Beyond Impact. We are a fund focused on innovative solutions that drive additionality — solutions that push the boundaries of thinking, science, and possibility. That is why we call it Beyond Impact. Some wonder if we are just another impact fund. We are not. We are the impact fund — one that looks beyond traditional approaches to impact investing and private markets. We believe that by investing in disruptive, deep-tech innovations, we can change the trajectory of impact and bring about system-level change." },
+      { type: "p", text: "That is why we don't invest only in food-tech. We invest in system-level change — by backing platform companies that not only serve the food market but also transform all the derivatives and ingredients we currently derive from animals and nature, offering bio-based alternatives that are superior, scalable, and sustainable. We view this through a regenerative, humane, and systemic lens: nature provides not only food to eat, but also ingredients that heal our bodies, rejuvenate our flesh, and provide materials to wear, build, and create products." },
+      { type: "quote", text: "True impact investing does not ask 'how do we do less harm?' but rather 'how do we do more good?'" },
+
+      { type: "h2", text: "The Case for Marine Ingredients" },
+      { type: "p", text: "Many people have written long-form reports and investment theses on the blue economy. I don't want to repeat them. Instead, I want to offer a fresh perspective on why we at Beyond Impact decided to enter this space — and why we chose to partner with Umito Partners." },
+      { type: "p", text: "The marine ecosystem is a largely untapped reservoir of high-barrier intellectual property — including unique proteins, polyunsaturated fatty acids, and secondary metabolites with applications in chronic-illness treatments spanning neuroprotection, oncology, and cardiovascular defense. The transformation of the pharmaceutical endotoxin testing space perfectly illustrates this zero-extraction return engine. When the U.S. Pharmacopeia officially recognized synthetic, recombinant alternatives as safe and effective in May 2025, it didn't just slow down wild horseshoe crab harvesting — it triggered an immediate, systemic race among Eli Lilly, GSK, Amgen, and Moderna to permanently adopt cell-grown, bio-identical alternatives like recombinant cascade reagent (rCR) technology." },
+      { type: "quote", text: "This is the inflection point we are betting on: the moment when biology becomes manufacturing, and when extraction becomes obsolete." },
+
+      { type: "h2", text: "Our Two Investment Lenses in the Blue Economy" },
+      { type: "p", text: "We fundamentally look at ventures in the blue economy through two lenses." },
+      { type: "p", text: "1. Ventures that Utilize Ocean Resources — companies that cultivate or harvest marine resources such as microalgae or diatoms to create functional ingredients or high-performance materials, generating revenue from sustainable biomass without depleting wild stocks." },
+      { type: "ul", items: [
+        "Swedish Algae Factory — cultivates microscopic diatoms to produce \"Algica,\" a high-performance, naturally nanoporous silica material. Already commercially validated in premium skincare as an ocean-safe SPF booster and a moisturizer rivalling hyaluronic acid, its true 100x horizon lies in advanced wound care and MedTech, where uniform mesoporous architecture enables controlled release of active substances over precise days-to-weeks windows.",
+        "Ingrediome — operates a precision fermentation platform that biosynthesizes nature-identical muscle proteins using only sunlight and CO₂ with cyanobacteria (blue-green algae), removing standard carbohydrate feedstocks from the equation and resolving critical feed-scarcity choke points.",
+      ]},
+      { type: "p", text: "2. Ventures that Replace the Usage of Marine Resources — companies that leverage cellular agriculture or precision fermentation to create alternatives that eliminate the need to harvest wild fish or deplete marine ecosystems, bypassing extraction entirely." },
+      { type: "ul", items: [
+        "Umami Bioworks — following its acquisition of crustacean pioneer Shiok Meats, Umami has evolved into a broader biomanufacturing platform. Using its AI-driven Alkemyst platform, it optimizes automated cell line development and continuous biomanufacturing, and recently unveiled the world's first animal-free, bioreactor-grown PDRN — a high-demand marine bioactive traditionally extracted from salmon sperm and used in anti-aging skincare and regenerative wound care.",
+        "BlueNalu — a global leader in cultivated seafood, targeting high-value species such as bluefin tuna and establishing deep strategic partnerships with global supply chain leaders.",
+      ]},
+      { type: "p", text: "Through our partnership with Umito, we are specifically seeking out these exact zero-extraction inflection points — focusing on Blue Bio & Foods and Marine Bio-Materials." },
+
+      { type: "h2", text: "Our Connection with Japan" },
+      { type: "img", src: "https://substackcdn.com/image/fetch/$s_!CR7K!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fada66d85-0ab1-443f-b1ab-a15befd11b02_1023x680.jpeg", alt: "Fuji seaweed salad", caption: "\"Fuji seaweed salad\" by khawkins04, licensed under CC BY 2.0" },
+      { type: "p", text: "This is where our thesis becomes truly distinctive. Several of our portfolio companies maintain deep, high-value connections to Japan's industrial, scientific, and corporate ecosystems — and we see this as a strategic bridge between Europe, Japan, and ASEAN." },
+      { type: "ul", items: [
+        "SuperMeat operates under a structured technology development and R&D framework with Japanese food and amino acid giant Ajinomoto, leveraging their \"AminoScience\" expertise to engineer plant-derived transferrin protein alternatives that drastically slash cell-culture media costs.",
+        "BlueNalu has secured direct investment from Sumitomo Corporation and executed major commercial MoUs with Mitsubishi Corporation to evaluate regulatory frameworks and market scaling for its cultivated Bluefin Tuna Toro, while collaborating with Tokyo's Cellular Agriculture Study Group at Tama University.",
+        "Gourmey (France) has explicitly designated Japan as a Tier-1, high-margin target market for its premium cultivated foie gras and poultry, establishing active networks with elite Tokyo culinary ambassadors and fine-food distributors.",
+        "Umami Bioworks anchors this regional strategy through a landmark commercial distribution MoU with Japanese functional-ingredient pioneer Nippon Barrier Free, to scale automated biomanufacturing software and high-value marine bioactives — such as cell-grown PDRN derived from localized species like the Japanese eel — across 19 global markets.",
+        "Mosa Meat brought Japanese mega-conglomerate Mitsubishi Corporation onto its cap table during its Series B fundraising round, instantly gaining access to Mitsubishi's global R&D infrastructure, food science divisions, and retail networks.",
+        "Geltor maintains a highly lucrative commercial partnership with NAGASE Specialty Materials — a key subsidiary of the multibillion-dollar, Kyoto-founded NAGASE Group — to drive B2B distribution and formulation integration for its biodesigned animal-free human collagen and bioidentical human elastin across elite skincare networks.",
+      ]},
+      { type: "quote", text: "Japan is not just a market for us — it is a partner in reimagining what the bioeconomy can look like. Its scientific rigor, corporate longevity, and cultural reverence for the ocean make it the ideal co-architect of this transition." },
+
+      { type: "h2", text: "Bridging Continents, Restoring Oceans" },
+      { type: "p", text: "With Umito's deep expertise in ocean-based solutions and its Japan-based presence, we can marry our core competencies in bioeconomy solutions and biodiversity impact investments to build a European–Japanese–ASEAN bridge. This creates an oversized impact on the oceans and the communities that rely on them — and beyond." },
+      { type: "quote", text: "Our goal, in essence, is to help the oceans breathe again — by investing in disruptive deep tech that restores rather than extracts." },
+      { type: "img", src: "https://substackcdn.com/image/fetch/$s_!tlYl!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2e02686e-8060-4b1b-87de-5a75fdf40922_1000x563.png", alt: "Beyond Impact × Umito Partners partnership announcement", caption: "Read the partnership announcement on Umito Partners" },
+
+      { type: "h2", text: "Suggested Reading & Key Reports" },
+      { type: "ul", items: [
+        "FAO (2026). The State of World Fisheries and Aquaculture (SOFIA) 2026. Food and Agriculture Organization of the United Nations, Rome.",
+        "UNCTAD (2025). The Ocean Economy: Trade, Investment, and Sustainable Development. United Nations Conference on Trade and Development, Geneva.",
+        "World Bank (2025). Blue Economy: A New Frontier for Sustainable Growth. World Bank Group, Washington D.C.",
+        "OECD (2025). Marine Bioactive Compounds: Regulatory Pathways and Market Potential. OECD, Paris.",
+        "Ellen MacArthur Foundation (2025). The Bio-based Materials Transition: Lessons from the Ocean. Cowes.",
+        "High Level Panel for a Sustainable Ocean Economy (2025). Ocean Solutions for a Net-Zero, Nature-Positive Future. Ocean Panel, Washington D.C.",
+      ]},
+      { type: "img", src: "https://substackcdn.com/image/fetch/$s_!yT_c!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F56a39568-4455-437a-b586-1e5d3fd87e4c_1024x767.jpeg", alt: "A Lego fish on a Lego bicycle", caption: "\"A Lego fish on a Lego bicycle\" by oskay, licensed under CC BY 2.0" },
+      { type: "p", text: "Lastly, let us give fish a free(dom) ride so they feel free from the chains and nets of human beings, rather than being trapped by them." },
+      { type: "p", text: "In Service of Humanity, Sagar Tandon, Partner, Beyond Impact VC." },
+    ],
+  },
 ];
+
 
 export const getInsight = (slug: string) => insights.find((i) => i.slug === slug);
