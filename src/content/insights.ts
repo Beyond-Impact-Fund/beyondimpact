@@ -553,7 +553,37 @@ export const insights: Insight[] = [
       { type: "p", text: "Originally published in GreenMoney Journal on October 29, 2025 — https://greenmoney.com/the-food-system-is-broken-lets-rebuild-it/" },
     ],
   },
+  {
+    slug: "fundraising-winter-is-a-blip",
+    title: "Fundraising Winter is a Blip",
+    author: "Claire Smith",
+    date: "Q2 2024",
+    category: "Alternative Proteins",
+    excerpt:
+      "Claire Smith, CEO of Beyond Impact VC, on surviving market cycles, why the current fundraising winter will pass, and what it takes to join her portfolio — featured in Protein Production Technology International.",
+    body: [
+      { type: "p", text: "The latest issue of Protein Production Technology International features an in-depth look at the alternative protein investment landscape. They interviewed 10 experts from around the world, including Claire Smith, CEO of Beyond Impact VC." },
+      { type: "p", text: "In the feature, Smith shares valuable insights on what it takes to join her portfolio, the most promising technologies in the industry, and her honest opinion on the current financial market." },
+      { type: "img", src: "/__l5e/assets-v1/7921578d-30d9-4583-a9f3-02c0a15e9fc7/fundraising-winter-blip.png", alt: "Claire Smith interview in Protein Production Technology International — 'This fundraising winter is a blip'", caption: "Claire Smith featured in Protein Production Technology International, Q2 2024." },
+      { type: "h2", text: "The entire food industry that relies on animal-based proteins or functional ingredients will be disrupted in the near future" },
+      { type: "p", text: "An early pioneer of alt proteins investment and longtime plant-based, Beyond Impact's Claire Smith has witnessed a great deal of change in the sector and, as she explains, she's adjusted her own approach accordingly. \"In the early days of 2017, we focused on alt-protein companies creating meat and dairy substitutes for the animal-free/vegetarian lifestyle market. The thesis then focused on the potential for these products to disrupt the conventional food industry by offering convenient, animal-free options." },
+      { type: "p", text: "\"I now prioritize investments in B2B biotech companies focused on novel methods of producing proteins, fats, and other ingredients through precision fermentation, cell culturing, and other synbio platforms. I now invest further upstream, where core IP and technological capabilities are being developed." },
+      { type: "p", text: "\"My current investment lens looks at companies for B2B clients (food, skincare, materials) with the appeal and potential to disrupt animal industrials action through cost-competitive, functional, and sustainable ingredients enabled by their proprietary biotech platforms.\"" },
+      { type: "h2", text: "Animal-free investing" },
+      { type: "p", text: "When it comes to alt proteins, specifically, Smith details a clear-cut strategy for those seeking her investment. \"We don't invest in anything that relies on animals, including insects or companies that serve the animal/fish feed industry. Not only are insects sentient creatures that deserve our respect and consideration, but insect-based protein production may also not be as sustainable,\" she says." },
+      { type: "p", text: "And although there are several opportunities she isn't remotely interested in, Smith describes herself as technology agnostic. \"Ingredients and materials can be synthesized/produced from various technologies such as plant-based, biomass fermentation, molecular farming, algae fermentation, cellular agriculture, gas fermentation, precision fermentation, etc. We evaluate each on its own merits with the aim of identifying the right application that provides a healthier, cleaner, and environmentally friendlier substitute that can reduce costs (to achieve price parity) and provide the right taste, texture, and feel.\"" },
+      { type: "h2", text: "Disruption in the near future" },
+      { type: "p", text: "With that in mind, what areas does Smith predict as having the most potential to achieve those goals? \"The entire food industry that relies on animal-based proteins or functional ingredients will be disrupted in the near future, as reliance on animals is inefficient from an environmental, supply chain, and financial standpoint,\" she notes. \"A some of these companies crack the code with scale and technical challenges, production of non-animal-derived ingredients, including proteins, will flourish and impact the meat, dairy, seafood, and pet industries. We are already seeing strong adoption in the dairy and meat alternatives segments, which will rapidly rise as these startups crack the cost-parity challenge." },
+      { type: "p", text: "\"Our analysis is not only based on consumer adoption, but we are also seeing huge interest among large ingredient, food, meat, seafood, and dairy companies.\" Smith reveals that Beyond Impact is currently closing transactions with two companies, one in South Korea and another in Switzerland. \"One focuses on extracting proteins and other high-value functional ingredients such as fibers from spent brewers' yeast with some strong commercialization commitments,\" she reveals. \"The other one has strong IP/patents that can fundamentally change the reliance on grow-th factors, FBS, and FBS-free media required for cultured meat production. Hence, it can make cultivated meat production closer to price parity with fully cultured meat products without a hybrid approach.\"" },
+      { type: "h2", text: "A blip, not a bust" },
+      { type: "p", text: "Commenting on today's investment market, Smith adds, \"This fundraising winter is a blip, which I can say with confidence as I have survived and lived through the 1987 crash, the Asian crisis, the dot-com bubble, and the 2008 global financial crash. I am here for the long haul from an impact standpoint and value/patient investment standpoint. This will clean out a lot of bad apples (both entrepreneurs and investors) from the market, especially those driven by hype and not by fundamentals." },
+      { type: "quote", text: "This fundraising winter is a blip and will clear out a lot of bad apples (both investors and entrepreneurs).", cite: "Claire Smith, CEO, Beyond Impact" },
+      { type: "p", text: "\"Observing many 'bad apples' over the years means Smith can easily detail how her ethical and transparent approach differs. \"We are absolutely against animal-derived ingredients and products in the alternative protein landscape, and we go to extreme lengths with our companies to incorporate terms and clauses that they are not conducting animal testing, selling to the animal/fish feed industry, or selling hybrid animal-derived meat combined with alternative meat products. We are the only animal-free Article 9 SFDR fund, which shows how nascent the climate financing space is in recognizing the connection between climate change, the biodiversity crisis, and the economy's current dependence on animal-derived products and ingredients.\"" },
+      { type: "p", text: "Originally published in Protein Production Technology International, Q2 2024. Read the full feature: https://hubs.ly/Q02x4h3d0" },
+    ],
+  },
 ];
+
 
 
 export const getInsight = (slug: string) => insights.find((i) => i.slug === slug);
