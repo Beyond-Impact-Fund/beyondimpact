@@ -1,5 +1,8 @@
 // Insights — long-form essays and opinion pieces from the Beyond Impact team.
 // Each insight renders as its own page at /insights/:slug
+import fundraisingWinterBlip from "@/assets/insights/fundraising-winter-blip.png";
+
+
 
 export interface Insight {
   slug: string;
