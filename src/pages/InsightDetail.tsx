@@ -2,6 +2,7 @@ import { Link, useParams, Navigate } from "react-router-dom";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
+import InsightSubscribeModal from "@/components/InsightSubscribeModal";
 import { getInsight, insights } from "@/content/insights";
 
 const parseDate = (d: string) => {
