@@ -94,16 +94,19 @@ const InsightSubscribeModal = () => {
             type="email"
             required
             maxLength={254}
+            disabled={submitting}
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="you@company.com"
-            className="w-full rounded-full border border-navy/20 bg-white px-5 py-3 text-sm text-navy placeholder:text-navy/40 focus:border-coral focus:outline-none"
+            className="w-full rounded-full border border-navy/20 bg-white px-5 py-3 text-sm text-navy placeholder:text-navy/40 focus:border-coral focus:outline-none disabled:opacity-60"
           />
           <button
             type="submit"
-            className="w-full rounded-full bg-coral px-6 py-3 text-sm font-medium text-clay transition-colors hover:bg-coral/90"
+            disabled={submitting}
+            className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-coral px-6 py-3 text-sm font-medium text-clay transition-colors hover:bg-coral/90 disabled:opacity-70"
           >
-            Subscribe
+            {submitting && <Loader2 className="h-4 w-4 animate-spin" />}
+            {submitting ? "Subscribing…" : "Subscribe"}
           </button>
           <button
             type="button"
