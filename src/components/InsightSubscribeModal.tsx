@@ -1,12 +1,14 @@
 import { useEffect, useState } from "react";
-import { X } from "lucide-react";
+import { X, Loader2 } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
+import { supabase } from "@/integrations/supabase/client";
 
 const STORAGE_KEY = "bi_insights_subscribed";
 
 const InsightSubscribeModal = () => {
   const [open, setOpen] = useState(false);
   const [email, setEmail] = useState("");
+  const [submitting, setSubmitting] = useState(false);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -15,22 +17,48 @@ const InsightSubscribeModal = () => {
     return () => clearTimeout(t);
   }, []);
 
-  const close = () => setOpen(false);
+  const close = () => {
+    if (submitting) return;
+    setOpen(false);
+  };
 
-  const submit = (e: React.FormEvent) => {
+  const submit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const value = email.trim();
+    const value = email.trim().toLowerCase();
     if (!value || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value) || value.length > 254) {
-      toast({ title: "Please enter a valid email address." });
+      toast({ title: "Please enter a valid email address.", variant: "destructive" });
       return;
     }
+    setSubmitting(true);
+    const { error } = await supabase.from("newsletter_subscribers").insert({
+      email: value,
+      source: "insights_modal",
+      page: typeof window !== "undefined" ? window.location.pathname : null,
+      user_agent: typeof navigator !== "undefined" ? navigator.userAgent.slice(0, 500) : null,
+    });
+    setSubmitting(false);
+
+    // 23505 = unique_violation → email already subscribed
+    if (error && error.code !== "23505") {
+      toast({
+        title: "Something went wrong",
+        description: "We couldn't save your email. Please try again in a moment.",
+        variant: "destructive",
+      });
+      return;
+    }
+
     localStorage.setItem(STORAGE_KEY, value);
     toast({
-      title: "You're on the list",
-      description: "We'll send Beyond Impact insights straight to your inbox.",
+      title: error?.code === "23505" ? "You're already subscribed" : "You're on the list",
+      description:
+        error?.code === "23505"
+          ? "This email is already receiving Beyond Impact insights."
+          : "We'll send Beyond Impact insights straight to your inbox.",
     });
     setOpen(false);
   };
+
 
   if (!open) return null;
 
