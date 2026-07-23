@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { site } from "@/content/site";
 import logoLight from "@/assets/beyond-logo-light.png";
 import { ArrowUpRight, Twitter, Facebook, Linkedin } from "lucide-react";
+import FooterSubscribe from "./FooterSubscribe";
 
 const socialIcon = (label: string) => {
   if (label === "Twitter") return Twitter;
@@ -96,6 +97,8 @@ const Footer = () => {
             </a>
           </div>
         </div>
+
+        <FooterSubscribe />
 
         <div className="mt-16 flex flex-col items-start justify-between gap-4 border-t border-clay/15 pt-8 text-xs text-clay/55 md:flex-row md:items-center">
           <div>© {new Date().getFullYear()} Beyond Impact. Confidential and subject to disclaimer.</div>
