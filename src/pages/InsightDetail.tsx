@@ -72,7 +72,7 @@ const InsightDetail = () => {
 
   return (
     <Layout navVariant="dark">
-      <SEO
+      <InsightSubscribeModal />
         title={`${insight.title} — ${insight.author} | Beyond Impact`}
         description={insight.excerpt}
         path={path}
