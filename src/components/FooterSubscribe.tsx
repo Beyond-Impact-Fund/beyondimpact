@@ -1,25 +1,49 @@
 import { useState } from "react";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Loader2 } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
+import { supabase } from "@/integrations/supabase/client";
 
 const FooterSubscribe = () => {
   const [email, setEmail] = useState("");
+  const [submitting, setSubmitting] = useState(false);
 
-  const submit = (e: React.FormEvent) => {
+  const submit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const value = email.trim();
+    const value = email.trim().toLowerCase();
     if (!value || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value) || value.length > 254) {
-      toast({ title: "Please enter a valid email address." });
+      toast({ title: "Please enter a valid email address.", variant: "destructive" });
       return;
     }
+
+    setSubmitting(true);
+    const { error } = await supabase.from("newsletter_subscribers").insert({
+      email: value,
+      source: "footer",
+      page: typeof window !== "undefined" ? window.location.pathname : null,
+      user_agent: typeof navigator !== "undefined" ? navigator.userAgent.slice(0, 500) : null,
+    });
+    setSubmitting(false);
+
+    if (error && error.code !== "23505") {
+      toast({
+        title: "Something went wrong",
+        description: "We couldn't save your email. Please try again in a moment.",
+        variant: "destructive",
+      });
+      return;
+    }
+
     try {
       localStorage.setItem("bi_insights_subscribed", value);
     } catch {
       // ignore storage errors
     }
     toast({
-      title: "Subscribed",
-      description: "You'll receive Beyond Impact insights in your inbox.",
+      title: error?.code === "23505" ? "You're already subscribed" : "Subscribed",
+      description:
+        error?.code === "23505"
+          ? "This email is already receiving Beyond Impact insights."
+          : "You'll receive Beyond Impact insights in your inbox.",
     });
     setEmail("");
   };
@@ -41,18 +65,29 @@ const FooterSubscribe = () => {
             type="email"
             required
             maxLength={254}
+            disabled={submitting}
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="you@company.com"
             aria-label="Email address"
-            className="flex-1 rounded-full border border-clay/25 bg-transparent px-5 py-3 text-sm text-clay placeholder:text-clay/50 focus:border-coral focus:outline-none"
+            className="flex-1 rounded-full border border-clay/25 bg-transparent px-5 py-3 text-sm text-clay placeholder:text-clay/50 focus:border-coral focus:outline-none disabled:opacity-60"
           />
           <button
             type="submit"
-            className="inline-flex items-center justify-center gap-2 rounded-full bg-coral px-6 py-3 text-sm font-medium text-clay transition-colors hover:bg-coral/90"
+            disabled={submitting}
+            className="inline-flex items-center justify-center gap-2 rounded-full bg-coral px-6 py-3 text-sm font-medium text-clay transition-colors hover:bg-coral/90 disabled:opacity-70"
           >
-            Subscribe
-            <ArrowRight className="h-4 w-4" />
+            {submitting ? (
+              <>
+                <Loader2 className="h-4 w-4 animate-spin" />
+                Subscribing…
+              </>
+            ) : (
+              <>
+                Subscribe
+                <ArrowRight className="h-4 w-4" />
+              </>
+            )}
           </button>
         </div>
       </form>
