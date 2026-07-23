@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { site } from "@/content/site";
 import logoLight from "@/assets/beyond-logo-light.png";
 import { ArrowUpRight, Twitter, Facebook, Linkedin } from "lucide-react";
+import FooterSubscribe from "./FooterSubscribe";
 
 const socialIcon = (label: string) => {
   if (label === "Twitter") return Twitter;
