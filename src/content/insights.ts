@@ -4,6 +4,9 @@ import fundraisingWinterBlip from "@/assets/insights/fundraising-winter-blip.png
 import theresaPortrait from "@/assets/insights/theresa-rothenbuecher.png.asset.json";
 import biotechnologyPhoto from "@/assets/insights/bioreactor-ciyou.png.asset.json";
 
+// Use the asset-serving origin explicitly so these photos also work on external deployments.
+const insightAssetUrl = (path: string) => new URL(path, "https://id-preview--4e503f58-c52e-4214-af56-91afbbc806af.lovable.app").href;
+
 
 
 export interface Insight {
@@ -32,12 +35,12 @@ export const insights: Insight[] = [
     title: "Why Biotechnology Is the Only Long-Term Plan Humanity Has Left",
     author: "Theresa Rothenbücher",
     authorRole: "Scientific Expert, Beyond Impact",
-    authorImage: theresaPortrait.url,
+    authorImage: insightAssetUrl(theresaPortrait.url),
     date: "October 14, 2026",
     category: "Biotechnology",
     excerpt: "Theresa Rothenbücher on replacing fossil-based supply chains with biotechnology, the policy momentum behind the bioeconomy, and our responsibility to build a lasting alternative.",
     body: [
-      { type: "img", src: biotechnologyPhoto.url, alt: "Laboratory bioreactors for controlled cultivation in biotechnology", caption: "Bioreactors bring biological production from scientific research toward industrial applications.", credit: { name: "Malvina TERMINI / Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Bior%C3%A9acteur_CiYOU.png", license: "CC BY-SA 4.0", licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/" } },
+      { type: "img", src: insightAssetUrl(biotechnologyPhoto.url), alt: "Laboratory bioreactors for controlled cultivation in biotechnology", caption: "Bioreactors bring biological production from scientific research toward industrial applications.", credit: { name: "Malvina TERMINI / Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Bior%C3%A9acteur_CiYOU.png", license: "CC BY-SA 4.0", licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/" } },
       { type: "p", text: "Sometimes, I wonder what the world would look like if we had kept worshiping nature instead of human-centered religions. What if we had retained a deep, visceral respect for the natural systems that nourish us?" },
       { type: "p", text: "And sometimes I ask myself \"What if mineral oil had never existed?\"" },
       { type: "p", text: "What if humanity had been forced, out of sheer necessity, to take the complex, elegant paths of biology instead of relying on cheap fossil carbon?" },
