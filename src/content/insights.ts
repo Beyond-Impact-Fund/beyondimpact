@@ -1,6 +1,7 @@
 // Insights — long-form essays and opinion pieces from the Beyond Impact team.
 // Each insight renders as its own page at /insights/:slug
 import fundraisingWinterBlip from "@/assets/insights/fundraising-winter-blip.png";
+import theresaPortrait from "@/assets/insights/theresa-rothenbuecher.png.asset.json";
 
 
 
@@ -8,6 +9,8 @@ export interface Insight {
   slug: string;
   title: string;
   author: string;
+  authorRole?: string;
+  authorImage?: string;
   date: string;
   category: string;
   excerpt: string;
@@ -17,12 +20,40 @@ export interface Insight {
     | { type: "h2"; text: string }
     | { type: "ul"; items: string[] }
     | { type: "quote"; text: string; cite?: string }
-    | { type: "img"; src: string; alt: string; caption?: string }
+    | { type: "img"; src: string; alt: string; caption?: string; credit?: { name: string; url: string; license?: string; licenseUrl?: string } }
   >;
 
 }
 
 export const insights: Insight[] = [
+  {
+    slug: "why-biotechnology-is-the-only-long-term-plan-humanity-has-left",
+    title: "Why Biotechnology Is the Only Long-Term Plan Humanity Has Left",
+    author: "Theresa Rothenbücher",
+    authorRole: "Scientific Expert, Beyond Impact",
+    authorImage: theresaPortrait.url,
+    date: "October 14, 2026",
+    category: "Biotechnology",
+    excerpt: "Theresa Rothenbücher on replacing fossil-based supply chains with biotechnology, the policy momentum behind the bioeconomy, and our responsibility to build a lasting alternative.",
+    body: [
+      { type: "p", text: "Sometimes, I wonder what the world would look like if we had kept worshiping nature instead of human-centered religions. What if we had retained a deep, visceral respect for the natural systems that nourish us?" },
+      { type: "p", text: "And sometimes I ask myself \"What if mineral oil had never existed?\"" },
+      { type: "p", text: "What if humanity had been forced, out of sheer necessity, to take the complex, elegant paths of biology instead of relying on cheap fossil carbon?" },
+      { type: "p", text: "When whale populations were facing total collapse in the 19th century, it wasn't empathy, or conservation policies that saved them, it was the discovery that we could burn petroleum instead of whale blubber. Decades later, when chemists developed synthetic plastics, they did so with the best of intentions. They created durable, lightweight materials to solve immediate human problems. Nobody could have imagined the scale at which we would produce them, or the absurd, single-use items we would create from it." },
+      { type: "p", text: "We can be forgiving of the generations living in the first half of the 20th century. Up until the 1970s, it was hard to predict the true planetary footprint of industrialization." },
+      { type: "p", text: "But history will not be so mild to us." },
+      { type: "p", text: "We know exactly what happens if we continue on the trajectory of recent decades. We have the data, we see the thermal anomalies, and we are witnessing ecosystem collapse in real time. We are witnessing mass extinction and loss of biodiversity. The generations before us built a quick fix; a short-sighted, fossil-fueled industrial model. It was never a long-term solution." },
+      { type: "p", text: "It is now our responsibility to dismantle this unsustainable industry and build a bio-based economy that keeps humans, animals, and the planet alive." },
+      { type: "p", text: "We are living in exciting times. We are the ones that will introduce the industrial pivot point." },
+      { type: "p", text: "The encouraging truth is that we don't have to start from scratch. Over the past decades, biotech innovators have developed the foundational tools required to replace fossil-based supply chains right now. While not every bio-based material or cellular product has reached the technical maturity required for industrial upscaling, we are getting remarkably close to making petroleum-based solutions obsolete." },
+      { type: "p", text: "We are living through a massive historical pivot." },
+      { type: "p", text: "Governments and global markets have finally realized that the path forward goes through biotechnology. The EU, US among other nations are injecting public capital into biotech for food, medicine, materials and other industries to ensure resilience and national security. For investors, this marks a fundamental shift: investments in the bioeconomy are now significantly de-risked by policy tailwinds, regulatory frameworks, and public co-funding." },
+      { type: "p", text: "Look at Singapore. Facing extreme land constraints and supply chain fragility, they had to act. They became the first nation to approve cultivated meat and heavily fund cellular agriculture because pressure forces innovation. Just like when society ran out of blubber." },
+      { type: "p", text: "Systemic shifts happen fastest when a system is under immense pressure. Is there anyone left who hasn't realized that we have reached the boiling point?" },
+      { type: "p", text: "As scientists, founders, and investors, we are the ones that can make the change happen. We are building the permanent replacement. Biotechnology gives us the opportunity to produce food, materials, and medicine without depleting the planet." },
+      { type: "p", text: "The technology is ready, the market pressure is undeniable, and the policy momentum is here. The only question that's left is: \"Will you be part of the solution?\"" },
+    ],
+  },
   {
     slug: "great-china-food-wall",
     title: "The Great China Food Wall",
