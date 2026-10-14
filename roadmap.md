@@ -1,3 +1,3 @@
-- [ ] Add Theresa’s full biotechnology article, portrait, and author attribution.
-- [ ] Include an openly licensed biotechnology photo with linked credit.
-- [ ] Check the article, author filter, imagery, and search metadata.
+- [x] Add Theresa’s full biotechnology article, portrait, and author attribution.
+- [x] Include an openly licensed biotechnology photo with linked credit.
+- [x] Check the article, author filter, imagery, and search metadata.
