@@ -2,7 +2,8 @@
 // Each insight renders as its own page at /insights/:slug
 import fundraisingWinterBlip from "@/assets/insights/fundraising-winter-blip.png";
 import theresaPortrait from "@/assets/insights/theresa-rothenbuecher.png.asset.json";
-import biotechnologyPhoto from "@/assets/insights/bioreactor-ciyou.png.asset.json";
+import seaweedFarmPhoto from "@/assets/insights/seaweed-farm-uroa-zanzibar.jpg.asset.json";
+import facultyBiotechPhoto from "@/assets/insights/faculty-food-engineering-biotechnology.jpg.asset.json";
 
 // Use the asset-serving origin explicitly so these photos also work on external deployments.
 const insightAssetUrl = (path: string) => new URL(path, "https://id-preview--4e503f58-c52e-4214-af56-91afbbc806af.lovable.app").href;
@@ -40,7 +41,7 @@ export const insights: Insight[] = [
     category: "Biotechnology",
     excerpt: "Theresa Rothenbücher on replacing fossil-based supply chains with biotechnology, the policy momentum behind the bioeconomy, and our responsibility to build a lasting alternative.",
     body: [
-      { type: "img", src: insightAssetUrl(biotechnologyPhoto.url), alt: "Laboratory bioreactors for controlled cultivation in biotechnology", caption: "Bioreactors bring biological production from scientific research toward industrial applications.", credit: { name: "Malvina TERMINI / Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Bior%C3%A9acteur_CiYOU.png", license: "CC BY-SA 4.0", licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/" } },
+      { type: "img", src: insightAssetUrl(facultyBiotechPhoto.url), alt: "Scientist working in the Faculty of Food Engineering and Biotechnology", caption: "Biotechnology labs bring biological production from scientific research toward industrial applications.", credit: { name: "Ibrahim Khairov / Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Faculty_of_Food_Engineering_and_Biotechnology_1.jpg", license: "CC BY 4.0", licenseUrl: "https://creativecommons.org/licenses/by/4.0/" } },
       { type: "p", text: "Sometimes, I wonder what the world would look like if we had kept worshiping nature instead of human-centered religions. What if we had retained a deep, visceral respect for the natural systems that nourish us?" },
       { type: "p", text: "And sometimes I ask myself \"What if mineral oil had never existed?\"" },
       { type: "p", text: "What if humanity had been forced, out of sheer necessity, to take the complex, elegant paths of biology instead of relying on cheap fossil carbon?" },
@@ -49,6 +50,7 @@ export const insights: Insight[] = [
       { type: "p", text: "But history will not be so mild to us." },
       { type: "p", text: "We know exactly what happens if we continue on the trajectory of recent decades. We have the data, we see the thermal anomalies, and we are witnessing ecosystem collapse in real time. We are witnessing mass extinction and loss of biodiversity. The generations before us built a quick fix; a short-sighted, fossil-fueled industrial model. It was never a long-term solution." },
       { type: "p", text: "It is now our responsibility to dismantle this unsustainable industry and build a bio-based economy that keeps humans, animals, and the planet alive." },
+      { type: "img", src: insightAssetUrl(seaweedFarmPhoto.url), alt: "Seaweed farming at Uroa on the coast of Zanzibar", caption: "Seaweed farming at Uroa, Zanzibar — regenerative ocean cultivation already feeding communities without depleting the planet.", credit: { name: "Moongateclimber / Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Seaweed_farm_uroa_zanzibar.jpg", license: "Public Domain" } },
       { type: "p", text: "We are living in exciting times. We are the ones that will introduce the industrial pivot point." },
       { type: "p", text: "The encouraging truth is that we don't have to start from scratch. Over the past decades, biotech innovators have developed the foundational tools required to replace fossil-based supply chains right now. While not every bio-based material or cellular product has reached the technical maturity required for industrial upscaling, we are getting remarkably close to making petroleum-based solutions obsolete." },
       { type: "p", text: "We are living through a massive historical pivot." },
