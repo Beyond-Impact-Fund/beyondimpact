@@ -29,13 +29,23 @@ const InsightDetail = () => {
 
   const path = `/insights/${insight.slug}`;
   const url = `https://beyondimpact.vc${path}`;
+  const articleImage = insight.body.find((block) => block.type === "img");
+  const imageUrl = articleImage?.type === "img"
+    ? new URL(articleImage.src, "https://beyondimpact.vc").href
+    : undefined;
 
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline: insight.title,
     description: insight.excerpt,
-    author: { "@type": "Person", name: insight.author },
+    author: {
+      "@type": "Person",
+      name: insight.author,
+      ...(insight.authorRole && { jobTitle: insight.authorRole }),
+      ...(insight.authorImage && { image: new URL(insight.authorImage, "https://beyondimpact.vc").href }),
+    },
+    ...(imageUrl && { image: imageUrl }),
     datePublished: parseDate(insight.date),
     dateModified: parseDate(insight.date),
     articleSection: insight.category,
@@ -76,6 +86,7 @@ const InsightDetail = () => {
         description={insight.excerpt}
         path={path}
         type="article"
+        image={imageUrl}
         keywords={`${insight.category}, ${insight.author}, impact investing, impact VC, climate VC, bioeconomy, alternative protein, biodiversity fund, Article 9 SFDR, biosolutions`}
         jsonLd={[articleJsonLd, breadcrumbsJsonLd]}
       />
@@ -91,10 +102,15 @@ const InsightDetail = () => {
               {insight.title}
             </h1>
             <p className="mt-6 text-lg text-clay/75">{insight.excerpt}</p>
-            <div className="mt-8 flex items-center gap-3 text-sm text-clay/65 uppercase tracking-wider">
-              <span>{insight.author}</span>
-              <span className="h-1 w-1 rounded-full bg-clay/40" />
-              <span>{insight.date}</span>
+            <div className="mt-8 flex items-center gap-4 text-sm text-clay/75">
+              {insight.authorImage && (
+                <img src={insight.authorImage} alt={insight.author} width={80} height={80} className="h-20 w-20 shrink-0 rounded-full object-cover object-top" />
+              )}
+              <div>
+                <p className="font-semibold">{insight.author}</p>
+                {insight.authorRole && <p className="mt-1">{insight.authorRole}</p>}
+                <p className="mt-1">{insight.date}</p>
+              </div>
             </div>
           </div>
         </section>
@@ -144,6 +160,12 @@ const InsightDetail = () => {
                       />
                       {block.caption && (
                         <figcaption className="mt-2 text-center text-xs text-navy/60">{block.caption}</figcaption>
+                      )}
+                      {block.credit && (
+                        <p className="mt-2 text-center text-sm text-navy/80">
+                          Photo: <a href={block.credit.url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-coral">{block.credit.name}</a>
+                          {block.credit.license && <> · <a href={block.credit.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-coral">{block.credit.license}</a></>}
+                        </p>
                       )}
                     </figure>
                   );
