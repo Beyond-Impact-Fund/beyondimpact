@@ -41,7 +41,7 @@ export const insights: Insight[] = [
     category: "Biotechnology",
     excerpt: "Theresa Rothenbücher on replacing fossil-based supply chains with biotechnology, the policy momentum behind the bioeconomy, and our responsibility to build a lasting alternative.",
     body: [
-      { type: "img", src: insightAssetUrl(biotechnologyPhoto.url), alt: "Laboratory bioreactors for controlled cultivation in biotechnology", caption: "Bioreactors bring biological production from scientific research toward industrial applications.", credit: { name: "Malvina TERMINI / Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Bior%C3%A9acteur_CiYOU.png", license: "CC BY-SA 4.0", licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/" } },
+      { type: "img", src: insightAssetUrl(facultyBiotechPhoto.url), alt: "Scientist working in the Faculty of Food Engineering and Biotechnology", caption: "Biotechnology labs bring biological production from scientific research toward industrial applications.", credit: { name: "Ibrahim Khairov / Wikimedia Commons", url: "https://commons.wikimedia.org/wiki/File:Faculty_of_Food_Engineering_and_Biotechnology_1.jpg", license: "CC BY 4.0", licenseUrl: "https://creativecommons.org/licenses/by/4.0/" } },
       { type: "p", text: "Sometimes, I wonder what the world would look like if we had kept worshiping nature instead of human-centered religions. What if we had retained a deep, visceral respect for the natural systems that nourish us?" },
       { type: "p", text: "And sometimes I ask myself \"What if mineral oil had never existed?\"" },
       { type: "p", text: "What if humanity had been forced, out of sheer necessity, to take the complex, elegant paths of biology instead of relying on cheap fossil carbon?" },
