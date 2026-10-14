@@ -2,7 +2,8 @@
 // Each insight renders as its own page at /insights/:slug
 import fundraisingWinterBlip from "@/assets/insights/fundraising-winter-blip.png";
 import theresaPortrait from "@/assets/insights/theresa-rothenbuecher.png.asset.json";
-import biotechnologyPhoto from "@/assets/insights/bioreactor-ciyou.png.asset.json";
+import seaweedFarmPhoto from "@/assets/insights/seaweed-farm-uroa-zanzibar.jpg.asset.json";
+import facultyBiotechPhoto from "@/assets/insights/faculty-food-engineering-biotechnology.jpg.asset.json";
 
 // Use the asset-serving origin explicitly so these photos also work on external deployments.
 const insightAssetUrl = (path: string) => new URL(path, "https://id-preview--4e503f58-c52e-4214-af56-91afbbc806af.lovable.app").href;
